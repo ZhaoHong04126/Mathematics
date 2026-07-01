@@ -72,7 +72,7 @@ export default function LR5() {
               <td style={{ ...tdStyle, ...dateStyle }}>2026-07-01</td>
               <td style={{ ...tdStyle, ...milestoneStyle }}>v0.2 製作微積分</td>
               <td style={tdStyle}>
-                - 1.1~1.4<br />
+                - 第一章完結<br />
                 - 設計淺色書籍風格佈局
               </td>
             </tr>

@@ -714,6 +714,14 @@ export default function Ch1_1_4() {
         </p>
         <ul style={{ paddingLeft: '20px', color: 'var(--text-secondary)', lineHeight: '1.6', display: 'flex', flexDirection: 'column', gap: '4px' }}>
           <li><strong>平方關係：</strong><MathInline math="\sin^2 x + \cos^2 x = 1" />、<MathInline math="1 + \tan^2 x = \sec^2 x" />、<MathInline math="1 + \cot^2 x = \csc^2 x" /></li>
+          <li><strong>和差角公式：</strong>
+            <br />
+            - <MathInline math="\sin(x \pm y) = \sin x\cos y \pm \cos x\sin y" />
+            <br />
+            - <MathInline math="\cos(x \pm y) = \cos x\cos y \mp \sin x\sin y" />
+            <br />
+            - <MathInline math="\tan(x \pm y) = \frac{\tan x \pm \tan y}{1 \mp \tan x\tan y}" />
+          </li>
           <li><strong>二倍角公式：</strong>
             <br />
             - <MathInline math="\sin(2x) = 2\sin x\cos x" />

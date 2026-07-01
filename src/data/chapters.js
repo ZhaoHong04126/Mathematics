@@ -3,12 +3,26 @@ import Calculus_1_1 from './chapters/Calculus/ch1/Calculus_1_1';
 import Calculus_1_2 from './chapters/Calculus/ch1/Calculus_1_2';
 import Calculus_1_3 from './chapters/Calculus/ch1/Calculus_1_3';
 import Calculus_1_4 from './chapters/Calculus/ch1/Calculus_1_4';
-// import Calculus_1_5 from './chapters/Calculus/ch1/Calculus_1_5';
-// import Calculus_1_6 from './chapters/Calculus/ch1/Calculus_1_6';
-// import Calculus_2_1 from './chapters/Calculus/ch2/Calculus_2_1';
-// import Calculus_3_1 from './chapters/Calculus/ch2/Calculus_3_1';
-// import Calculus_4_1 from './chapters/Calculus/ch2/Calculus_4_1';
-// import Calculus_5_1 from './chapters/Calculus/ch2/Calculus_5_1';
+import Calculus_1_5 from './chapters/Calculus/ch1/Calculus_1_5';
+import Calculus_1_6 from './chapters/Calculus/ch1/Calculus_1_6';
+
+
+import Calculus_Ch2_Overview from './chapters/Calculus/ch2/Calculus_Ch2_Overview';
+import Calculus_2_1 from './chapters/Calculus/ch2/Calculus_2_1';
+import Calculus_2_2 from './chapters/Calculus/ch2/Calculus_2_2';
+import Calculus_2_3 from './chapters/Calculus/ch2/Calculus_2_3';
+import Calculus_2_4 from './chapters/Calculus/ch2/Calculus_2_4';
+
+
+import Calculus_Ch3_Overview from './chapters/Calculus/ch3/Calculus_Ch3_Overview';
+import Calculus_3_1 from './chapters/Calculus/ch3/Calculus_3_1';
+import Calculus_3_2 from './chapters/Calculus/ch3/Calculus_3_2';
+import Calculus_3_3 from './chapters/Calculus/ch3/Calculus_3_3';
+import Calculus_3_4 from './chapters/Calculus/ch3/Calculus_3_4';
+import Calculus_3_5 from './chapters/Calculus/ch3/Calculus_3_5';
+import Calculus_3_6 from './chapters/Calculus/ch3/Calculus_3_6';
+import Calculus_3_7 from './chapters/Calculus/ch3/Calculus_3_7';
+
 import LR5 from './chapters/info/LR_5';
 
 export const chaptersData = [
@@ -46,28 +60,83 @@ export const chaptersData = [
           {
             id: "1-1-5",
             title: "1.5 指數函數與對數函數",
-            const: "未有此內容",
-            // component: Calculus_1_5
+            component: Calculus_1_5
           },
           {
             id: "1-1-6",
             title: "1.6 雙曲函數與反雙曲函數",
-            const: "未有此內容",
-            // component: Calculus_1_6
+            component: Calculus_1_6
           },
         ]
       },
       {
         id: "1-2",
         title: "第二章：極限與連續性",
-        content: "未有此內容",
-        // component: [] // Calculus_2_1
+        component: Calculus_Ch2_Overview,
+        subtopics: [
+          {
+            id: "1-2-1",
+            title: "2.1 極限的直觀定義與運算法則",
+            component: Calculus_2_1
+          },
+          {
+            id: "1-2-2",
+            title: "2.2 極限的嚴格定義與 ε-δ 證明",
+            component: Calculus_2_2
+          },
+          {
+            id: "1-2-3",
+            title: "2.3 無窮極限與漸近線",
+            component: Calculus_2_3
+          },
+          {
+            id: "1-2-4",
+            title: "2.4 函數的連續性與重要定理",
+            component: Calculus_2_4
+          }
+        ]
       },
       {
         id: "1-3",
-        title: "第三章：導數",
-        content: "未有此內容",
-        // component: [] // Calculus_3_1
+        title: "第三章：微分",
+        component: Calculus_Ch3_Overview,
+        subtopics: [
+          {
+            id: "1-3-1",
+            title: "3.1 導數的定義與切線斜率",
+            component: Calculus_3_1
+          },
+          {
+            id: "1-3-2",
+            title: "3.2 導數函數與可微性",
+            component: Calculus_3_2
+          },
+          {
+            id: "1-3-3",
+            title: "3.3 基本微分公式與乘除法法則",
+            component: Calculus_3_3
+          },
+          {
+            id: "1-3-4",
+            title: "3.4 常見函數的導數",
+            component: Calculus_3_4
+          },
+          {
+            id: "1-3-5",
+            title: "3.5 連鎖法則與隱函數微分",
+            component: Calculus_3_5
+          },
+          {
+            id: "1-3-6",
+            title: "3.6 對數微分法與高階導數",
+            component: Calculus_3_6
+          },
+          {
+            id: "1-3-7",
+            title: "3.7 (補充) 雙曲函數的導數與反函數的導數",
+            component: Calculus_3_7
+          }
+        ]
       },
       {
         id: "1-4",
