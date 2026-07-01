@@ -5,8 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <title>大學數學資學網</title>
-    <script type="module" crossorigin src="/UniversityMathematics/assets/index-D7tZMOSC.js"></script>
-    <link rel="stylesheet" crossorigin href="/UniversityMathematics/assets/index-C78XJhoF.css">
+    <!-- MathJax Configuration -->
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true
+        },
+        options: {
+          ignoreHtmlClass: 'tex2jax_ignore',
+          processHtmlClass: 'tex2jax_process'
+        },
+        startup: {
+          pageReady: () => {
+            MathJax.startup.defaultPageReady();
+            
+            const hasMathText = (node) => {
+              if (node.nodeType === 3) {
+                const text = node.textContent || '';
+                return text.includes('$') || text.includes('\\(') || text.includes('\\[') || text.includes('\\begin{');
+              }
+              if (node.nodeType === 1) {
+                if (node.tagName.startsWith('MJX-') || (node.classList && node.classList.contains('tex2jax_ignore'))) {
+                  return false;
+                }
+                for (let i = 0; i < node.childNodes.length; i++) {
+                  if (hasMathText(node.childNodes[i])) return true;
+                }
+              }
+              return false;
+            };
+
+            // Set up MutationObserver to automatically typeset dynamically added React elements
+            const observer = new MutationObserver((mutations) => {
+              let shouldTypeset = false;
+              for (const mutation of mutations) {
+                if (mutation.addedNodes && mutation.addedNodes.length > 0) {
+                  for (const node of mutation.addedNodes) {
+                    if (hasMathText(node)) {
+                      shouldTypeset = true;
+                      break;
+                    }
+                  }
+                }
+                if (shouldTypeset) break;
+              }
+
+              if (shouldTypeset && window.MathJax && window.MathJax.typesetPromise) {
+                if (window.mathjaxTimeout) clearTimeout(window.mathjaxTimeout);
+                window.mathjaxTimeout = setTimeout(() => {
+                  window.MathJax.typesetPromise().catch((err) => console.error(err));
+                }, 100);
+              }
+            });
+            observer.observe(document.body, { childList: true, subtree: true });
+          }
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="module" crossorigin src="/UniversityMathematics/assets/index-DV-UBUcB.js"></script>
+    <link rel="stylesheet" crossorigin href="/UniversityMathematics/assets/index-C_xGyx8Q.css">
   </head>
   <body>
     <div id="root"></div>
