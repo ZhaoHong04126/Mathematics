@@ -1,4 +1,4 @@
-export default function Calculus_3_6() {
+export default function Calculus_3_8() {
   return (
     <div>
       <h2 style={{ 
@@ -9,7 +9,7 @@ export default function Calculus_3_6() {
         color: 'var(--text-primary)',
         fontWeight: '600'
       }}>
-        3.6 反三角函數的導數
+        3.8 (補充) 雙曲函數的導數與反函數的導數
       </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         內容編製中，敬請期待...

@@ -23,6 +23,9 @@ import Calculus_3_4 from './chapters/Calculus/ch3/Calculus_3_4';
 import Calculus_3_5 from './chapters/Calculus/ch3/Calculus_3_5';
 import Calculus_3_6 from './chapters/Calculus/ch3/Calculus_3_6';
 import Calculus_3_7 from './chapters/Calculus/ch3/Calculus_3_7';
+import Calculus_3_8 from './chapters/Calculus/ch3/Calculus_3_8';
+
+import Calculus_Ch4_Overview from './chapters/Calculus/ch4/Calculus_Ch4_Overview';
 
 import LR5 from './chapters/info/LR_5';
 
@@ -33,6 +36,7 @@ export const chaptersData = [
     title: "微積分",
     content: "",
     topics: [
+      // 第一章：函數
       {
         id: "1-1",
         title: "第一章：函數",
@@ -70,6 +74,7 @@ export const chaptersData = [
           },
         ]
       },
+      // 第二章：極限與連續性
       {
         id: "1-2",
         title: "第二章：極限與連續性",
@@ -102,6 +107,7 @@ export const chaptersData = [
           }
         ]
       },
+      // 第三章：微分
       {
         id: "1-3",
         title: "第三章：微分",
@@ -129,39 +135,69 @@ export const chaptersData = [
           },
           {
             id: "1-3-5",
-            title: "3.5 連鎖法則與隱函數微分",
+            title: "3.5 連鎖法則、隱函數與反函數微分",
             component: Calculus_3_5
           },
           {
             id: "1-3-6",
-            title: "3.6 對數微分法與高階導數",
+            title: "3.6 反三角函數的導數",
             component: Calculus_3_6
           },
           {
             id: "1-3-7",
-            title: "3.7 (補充) 雙曲函數的導數與反函數的導數",
+            title: "3.7 對數微分法與高階導數",
             component: Calculus_3_7
+          },
+          {
+            id: "1-3-8",
+            title: "3.8 (補充) 雙曲函數的導數與反函數的導數",
+            component: Calculus_3_8
           }
         ]
       },
+      // 第四章：微分的應用
       {
         id: "1-4",
         title: "第四章：微分的應用",
-        content: "未有此內容",
-        // component: [] // Calculus_4_1
+        component: Calculus_Ch4_Overview,
+        subtopics: [
+          { 
+            id: "1-4-1", 
+            title: "4.1 導函數與函數性質", 
+            content: "未有此內容" 
+          },
+          { 
+            id: "1-4-2", 
+            title: "4.2 極值問題", 
+            content: "未有此內容" 
+          },
+          { 
+            id: "1-4-3", 
+            title: "4.3 均值定理", 
+            content: "未有此內容" 
+          },
+          { 
+            id: "1-4-4", 
+            title: "4.4 洛必達法則", 
+            content: "未有此內容" 
+          }
+        ]
       },
+      // 第五章：積分
       {
         id: "1-5",
         title: "第五章：積分",
         content: "未有此內容",
         // component: [] // Calculus_5_1
       },
+      // 第六章：積分技巧
       {
         id: "1-6",
         title: "第六章：積分技巧",
         content: "未有此內容",
         // component: [] // Calculus_6_1
       },
+      // 第七章：無窮數列與級數
       {
         id: "1-7",
         title: "第七章：無窮數列與級數",
