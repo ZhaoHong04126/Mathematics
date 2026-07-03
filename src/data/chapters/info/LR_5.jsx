@@ -78,15 +78,23 @@ export default function LR5() {
             </tr>
             <tr>
               <td style={{ ...tdStyle, ...dateStyle }}>2026-07-02</td>
-              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.3 自定義撰寫與內容填充</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.3 製作微積分</td>
               <td style={tdStyle}>
                 - 第二章完結<br />
                 - 把 [ 1.3反函數 ] 改為 [ 1.3合成函數與反函數 ]
               </td>
             </tr>
             <tr>
+              <td style={{ ...tdStyle, ...dateStyle }}>2026-07-03</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.4 製作微積分</td>
+              <td style={tdStyle}>
+                - 製作 3.1 ~ 3.6<br />
+                - 編寫第四章內容(預寫)
+              </td>
+            </tr>
+            <tr>
               <td style={{ ...tdStyle, ...dateStyle }}>未來規劃</td>
-              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.4 自定義撰寫與內容填充</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.5 自定義撰寫與內容填充</td>
               <td style={tdStyle}>
                 - 開始填充內容<br />
                 - 逐步撰寫各單元的練習題與定理推導過程
