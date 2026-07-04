@@ -93,11 +93,21 @@ export default function LR5() {
               </td>
             </tr>
             <tr>
-              <td style={{ ...tdStyle, ...dateStyle }}>未來規劃</td>
-              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.5 自定義撰寫與內容填充</td>
+              <td style={{ ...tdStyle, ...dateStyle }}>2026-07-04</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.5 側邊欄優化與微積分第三章推進</td>
               <td style={tdStyle}>
-                - 開始填充內容<br />
-                - 逐步撰寫各單元的練習題與定理推導過程
+                - 優化側邊欄介面（縮減間距與寬度、替換「資訊與資源」專屬圖示）<br />
+                - 更新第三章導覽目錄索引，對齊最新章節架構<br />
+                - 完成 [ 3.6 反三角函數的導數 ] 內容編製<br />
+                - 完成 [ 3.7 對數微分法與高階導數 ] 內容編製
+              </td>
+            </tr>
+            <tr>
+              <td style={{ ...tdStyle, ...dateStyle }}>未來規劃</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.6 持續撰寫與優化</td>
+              <td style={tdStyle}>
+                - 繼續完成後續微積分章節<br />
+                - 逐步豐富例題與隨堂練習解答
               </td>
             </tr>
           </tbody>
