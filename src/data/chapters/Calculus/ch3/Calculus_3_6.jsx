@@ -60,74 +60,76 @@ export default function Calculus_3_6() {
                 1. 反正弦函數 (Arcsine)
               </span>
               <MathBlock math="\frac{d}{dx}(\arcsin x) = \frac{1}{\sqrt{1 - x^2}} \quad (|x| < 1)" />
+              <Proof title="證明">
+                <p>令 <MathInline math="y = \arcsin x" />，則 <MathInline math="\sin y = x" /> (<MathInline math="-\frac{\pi}{2} < y < \frac{\pi}{2}" />)。兩邊對 <MathInline math="x" /> 微分：</p>
+                <MathBlock math="\cos y \cdot \frac{dy}{dx} = 1 \implies \frac{dy}{dx} = \frac{1}{\cos y}" />
+                <p>因為 <MathInline math="\cos y > 0" />，所以 <MathInline math="\cos y = \sqrt{1 - \sin^2 y} = \sqrt{1 - x^2}" />：</p>
+                <MathBlock math="\frac{d}{dx}(\arcsin x) = \frac{1}{\sqrt{1 - x^2}}" />
+              </Proof>
             </div>
             <div style={subCardStyle}>
               <span style={{ fontWeight: '700', color: 'var(--definition-border)' }}>
                 2. 反餘弦函數 (Arccosine)
               </span>
               <MathBlock math="\frac{d}{dx}(\arccos x) = -\frac{1}{\sqrt{1 - x^2}} \quad (|x| < 1)" />
+              <Proof title="證明">
+                <p>令 <MathInline math="y = \arccos x" />，則 <MathInline math="\cos y = x" /> (<MathInline math="0 < y < \pi" />)。兩邊對 <MathInline math="x" /> 微分：</p>
+                <MathBlock math="-\sin y \cdot \frac{dy}{dx} = 1 \implies \frac{dy}{dx} = -\frac{1}{\sin y}" />
+                <p>因為 <MathInline math="\sin y > 0" />，所以 <MathInline math="\sin y = \sqrt{1 - \cos^2 y} = \sqrt{1 - x^2}" />：</p>
+                <MathBlock math="\frac{d}{dx}(\arccos x) = -\frac{1}{\sqrt{1 - x^2}}" />
+              </Proof>
             </div>
             <div style={subCardStyle}>
               <span style={{ fontWeight: '700', color: 'var(--definition-border)' }}>
                 3. 反正切函數 (Arctangent)
               </span>
               <MathBlock math="\frac{d}{dx}(\arctan x) = \frac{1}{1 + x^2}" />
+              <Proof title="證明">
+                <p>令 <MathInline math="y = \arctan x" />，則 <MathInline math="\tan y = x" /> (<MathInline math="-\frac{\pi}{2} < y < \frac{\pi}{2}" />)。兩邊對 <MathInline math="x" /> 微分：</p>
+                <MathBlock math="\sec^2 y \cdot \frac{dy}{dx} = 1 \implies \frac{dy}{dx} = \frac{1}{\sec^2 y}" />
+                <p>因為 <MathInline math="\sec^2 y = 1 + \tan^2 y = 1 + x^2" />：</p>
+                <MathBlock math="\frac{d}{dx}(\arctan x) = \frac{1}{1 + x^2}" />
+              </Proof>
             </div>
             <div style={subCardStyle}>
               <span style={{ fontWeight: '700', color: 'var(--definition-border)' }}>
                 4. 反餘切函數 (Arccotangent)
               </span>
               <MathBlock math="\frac{d}{dx}(\text{arccot}\, x) = -\frac{1}{1 + x^2}" />
+              <Proof title="證明">
+                <p>令 <MathInline math="y = \text{arccot}\, x" />，則 <MathInline math="\cot y = x" /> (<MathInline math="0 < y < \pi" />)。兩邊對 <MathInline math="x" /> 微分：</p>
+                <MathBlock math="-\csc^2 y \cdot \frac{dy}{dx} = 1 \implies \frac{dy}{dx} = -\frac{1}{\csc^2 y}" />
+                <p>因為 <MathInline math="\csc^2 y = 1 + \cot^2 y = 1 + x^2" />：</p>
+                <MathBlock math="\frac{d}{dx}(\text{arccot}\, x) = -\frac{1}{1 + x^2}" />
+              </Proof>
             </div>
             <div style={subCardStyle}>
               <span style={{ fontWeight: '700', color: 'var(--definition-border)' }}>
                 5. 反正割函數 (Arcsecant)
               </span>
               <MathBlock math="\frac{d}{dx}(\text{arcsec}\, x) = \frac{1}{|x|\sqrt{x^2 - 1}} \quad (|x| > 1)" />
+              <Proof title="證明">
+                <p>令 <MathInline math="y = \text{arcsec}\, x" />，則 <MathInline math="\sec y = x" />。兩邊對 <MathInline math="x" /> 微分：</p>
+                <MathBlock math="\sec y \tan y \cdot \frac{dy}{dx} = 1 \implies \frac{dy}{dx} = \frac{1}{\sec y \tan y}" />
+                <p>因為 <MathInline math="\tan^2 y = \sec^2 y - 1 = x^2 - 1" />，且由主值域的選取可確保 <MathInline math="\sec y \tan y > 0" />，即 <MathInline math="\sec y \tan y = |x|\sqrt{x^2 - 1}" />：</p>
+                <MathBlock math="\frac{d}{dx}(\text{arcsec}\, x) = \frac{1}{|x|\sqrt{x^2 - 1}}" />
+              </Proof>
             </div>
             <div style={subCardStyle}>
               <span style={{ fontWeight: '700', color: 'var(--definition-border)' }}>
                 6. 反餘割函數 (Arccosecant)
               </span>
               <MathBlock math="\frac{d}{dx}(\text{arccsc}\, x) = -\frac{1}{|x|\sqrt{x^2 - 1}} \quad (|x| > 1)" />
+              <Proof title="證明">
+                <p>令 <MathInline math="y = \text{arccsc}\, x" />，則 <MathInline math="\csc y = x" />。兩邊對 <MathInline math="x" /> 微分：</p>
+                <MathBlock math="-\csc y \cot y \cdot \frac{dy}{dx} = 1 \implies \frac{dy}{dx} = -\frac{1}{\csc y \cot y}" />
+                <p>同理，由主值域的選取可得 <MathInline math="\csc y \cot y = |x|\sqrt{x^2 - 1}" />：</p>
+                <MathBlock math="\frac{d}{dx}(\text{arccsc}\, x) = -\frac{1}{|x|\sqrt{x^2 - 1}}" />
+              </Proof>
             </div>
           </div>
         </Definition>
       </div>
-
-      <Proof title="點擊展開：反三角函數導數的證明 (利用隱函數微分)">
-        <p style={{ fontWeight: '600', color: 'var(--text-primary)', marginBottom: '8px' }}>
-          1. 反正弦函數 <MathInline math="\arcsin x" /> 的證明：
-        </p>
-        <div style={{ color: 'var(--text-secondary)', lineHeight: '1.7', marginBottom: '16px' }}>
-          設 <MathInline math="y = \arcsin x" />，其中 <MathInline math="-\frac{\pi}{2} \le y \le \frac{\pi}{2}" />。這等價於：
-          <MathBlock math="\sin y = x" />
-          對兩邊同時對 <MathInline math="x" /> 微分（利用連鎖法則）：
-          <MathBlock math="\cos y \cdot \frac{dy}{dx} = 1" />
-          <MathBlock math="\frac{dy}{dx} = \frac{1}{\cos y}" />
-          因為 <MathInline math="-\frac{\pi}{2} \le y \le \frac{\pi}{2}" />，所以 <MathInline math="\cos y \ge 0" />。利用三角恆等式 <MathInline math="\cos^2 y + \sin^2 y = 1" />：
-          <MathBlock math="\cos y = \sqrt{1 - \sin^2 y} = \sqrt{1 - x^2}" />
-          代回原式可得：
-          <MathBlock math="\frac{dy}{dx} = \frac{1}{\sqrt{1 - x^2}}" />
-          因此，<MathInline math="(\arcsin x)' = \frac{1}{\sqrt{1 - x^2}}" />。
-        </div>
-
-        <p style={{ fontWeight: '600', color: 'var(--text-primary)', marginBottom: '8px' }}>
-          2. 反正切函數 <MathInline math="\arctan x" /> 的證明：
-        </p>
-        <div style={{ color: 'var(--text-secondary)', lineHeight: '1.7' }}>
-          設 <MathInline math="y = \arctan x" />，其中 <MathInline math="-\frac{\pi}{2} < y < \frac{\pi}{2}" />。這等價於：
-          <MathBlock math="\tan y = x" />
-          對兩邊同時對 <MathInline math="x" /> 微分：
-          <MathBlock math="\sec^2 y \cdot \frac{dy}{dx} = 1" />
-          <MathBlock math="\frac{dy}{dx} = \frac{1}{\sec^2 y}" />
-          利用三角恆等式 <MathInline math="\sec^2 y = 1 + \tan^2 y" />，且 <MathInline math="\tan y = x" />：
-          <MathBlock math="\sec^2 y = 1 + x^2" />
-          代回原式可得：
-          <MathBlock math="\frac{dy}{dx} = \frac{1}{1 + x^2}" />
-          因此，<MathInline math="(\arctan x)' = \frac{1}{1 + x^2}" />。<span style={{ float: 'right' }}>■</span>
-        </div>
-      </Proof>
 
       {/* 精選例題 */}
       <h3 style={{ margin: '32px 0 16px 0', color: 'var(--text-primary)', fontSize: '1.3rem', fontWeight: '600' }}>
