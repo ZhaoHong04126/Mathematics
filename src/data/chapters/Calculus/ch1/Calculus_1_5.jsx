@@ -349,16 +349,6 @@ export default function Ch1_1_5() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        1.5 指數與對數函數 (Exponential & Logarithmic Functions)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         在微積分學與自然科學中，<strong>指數函數</strong>與其反函數——<strong>對數函數</strong>扮演著極其核心的角色。它們廣泛應用於描述生物族群成長、放射性衰變、利率複利以及許多變化率與當前大小成正比的自然現象。
       </p>

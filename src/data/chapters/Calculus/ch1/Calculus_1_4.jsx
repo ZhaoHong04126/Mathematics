@@ -638,16 +638,6 @@ export default function Ch1_1_4() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        1.4 三角函數與反三角函數 (Trigonometric & Inverse Trigonometric Functions)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         在微積分中，<strong>三角函數</strong>與其<strong>反三角函數</strong>被廣泛用於描述週期性現象、進行幾何測量以及簡化複雜的積分計算。必須注意的是，在微積分中，<strong>角的大小一律使用「弧度制 (Radians)」而非度數制 (Degrees)</strong>，因為弧度制能使三角函數的極限與導數公式最為簡潔。
       </p>

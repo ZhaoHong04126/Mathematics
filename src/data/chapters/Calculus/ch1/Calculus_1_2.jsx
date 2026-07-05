@@ -4,16 +4,6 @@ export default function Ch1_1_2() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        1.2 冪函數與多項式函數 (Power Functions & Polynomial Functions)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         在本節中，我們將學習微積分中最基礎且最常用到的兩大類初等函數：<strong>冪函數</strong>與由其組合而成的<strong>多項式函數</strong>。它們具有良好的代數性質（如定義域寬廣、易於求導與積分），是研究微積分各類定理的絕佳起步對象。
       </p>

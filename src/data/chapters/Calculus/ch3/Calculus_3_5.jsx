@@ -29,16 +29,7 @@ export default function Calculus_3_5() {
 
   return (
     <div>
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        3.5 連鎖法則、隱函數與反函數微分 (The Chain Rule, Implicit, and Inverse Differentiation)
-      </h2>
+      {/* 標題與引言 */}
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         在處理更複雜的函數時，我們經常會遇到合成函數（一個函數包含著另一個函數）。**連鎖法則 (Chain Rule)** 是解決合成函數微分的核心工具。此外，當方程式無法明確地將 $y$ 寫成 $x$ 的函數，而是以隱函數形式 $F(x, y) = 0$ 呈現時，我們需要使用**隱函數微分 (Implicit Differentiation)** 來求得導數。最後，我們也會探討如何運用這些技巧來求出**反函數 (Inverse Functions)** 的導數。
       </p>

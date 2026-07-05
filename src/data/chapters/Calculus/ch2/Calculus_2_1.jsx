@@ -13,16 +13,6 @@ export default function Calculus_2_1() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        2.1 極限的直觀定義 (Intuitive Definition of Limits)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         極限是微積分的靈魂。如果沒有極限的概念，我們就無法定義瞬時變化率（導數）或連續曲線下的面積（積分）。在本單元中，我們將從直觀的角度切入，理解極限的本質與表達方式。
       </p>

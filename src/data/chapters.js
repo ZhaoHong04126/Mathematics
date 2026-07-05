@@ -30,7 +30,7 @@ import Calculus_Ch4_Overview from './chapters/Calculus/ch4/Calculus_Ch4_Overview
 import LR5 from './chapters/info/LR_5';
 
 export const chaptersData = [
-  // 1. 微積分 (Calculus)
+  // 1. 微積分
   {
     id: "ch1",
     title: "微積分",
@@ -207,7 +207,7 @@ export const chaptersData = [
     ]
   },
 
-  // 2. 線性代數 (Linear Algebra)
+  // 2. 線性代數
   {
     id: "ch2",
     title: "線性代數",
@@ -242,7 +242,7 @@ export const chaptersData = [
     ]
   },
 
-  // 3. 多變量微積分 (Multivariable Calculus)
+  // 3. 多變量微積分
   {
     id: "ch3",
     title: "多變量微積分",
@@ -277,7 +277,22 @@ export const chaptersData = [
     ]
   },
 
-  // 4. 資訊與資源
+  // 4. 機率論
+  {
+    id: "ch4",
+    title: "機率論",
+    content: "",
+    topics: []
+  },
+
+  // 5. 數學財務經濟
+  {
+    id: "ch5",
+    title: "數學財務經濟",
+    content: "",
+    topics: []
+  },
+  // 6. 資訊與資源
   {
     id: "info",
     title: "資訊與資源",

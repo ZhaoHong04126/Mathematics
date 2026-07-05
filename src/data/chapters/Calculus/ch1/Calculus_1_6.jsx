@@ -4,16 +4,6 @@ export default function Ch1_1_6() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        1.6 雙曲函數與反雙曲函數 (Hyperbolic & Inverse Hyperbolic Functions)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         雙曲函數是一類基於自然指數函數 <MathInline math="e^x" /> 與 <MathInline math="e^{-x}" /> 組合而成的特殊函數。雖然它們是用指數形式定義的，但其代數性質、恆等式與運算規律與常見的三角函數（圓函數）有著高度的類比性。雙曲函數在物理學的懸鏈線（Catenary，如吊橋、電纜自然下垂的曲線）與相對論速度相加中皆有重要應用。
       </p>

@@ -30,16 +30,6 @@ export default function Calculus_3_4() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        3.4 常見函數的導數 (Derivatives of Trigonometric, Exponential, and Logarithmic Functions)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         除了多項式、根式與有理函數等代數函數外，在物理學、工程學與經濟學中，我們經常遇到所謂的**超越函數 (Transcendental Functions)**，其中包含三角函數、指數函數與對數函數。掌握這些核心超越函數的導數公式，是進行微積分應用（例如相關變率、極值問題與動態建模）的必備工具。
       </p>

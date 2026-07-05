@@ -30,16 +30,6 @@ export default function Calculus_3_6() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        3.6 反三角函數的導數 (Derivatives of Inverse Trigonometric Functions)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         在處理反三角函數時，我們經常會利用「隱函數微分 (Implicit Differentiation)」來推導它們的導數。反三角函數（如反正弦 <MathInline math="\arcsin x" />、反正切 <MathInline math="\arctan x" /> 等）在積分學中非常重要，因為許多常見的有理函數和根式函數的積分都會產生反三角函數。
       </p>

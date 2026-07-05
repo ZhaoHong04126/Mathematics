@@ -14,16 +14,6 @@ export default function Calculus_3_3() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        3.3 基本微分公式與乘除法法則 (Basic Differentiation Formulas and Product and Quotient Rules)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         在前面的章節中，我們計算導數都是透過極限的定義直接推導。然而，對於複雜的函數（如多項式相乘或有理分式），直接用極限定義計算會變得異常繁瑣且容易出錯。為了提高計算效率，本單元將介紹一組基礎的微分代數法則。這些法則能夠讓我們避開極限的複雜計算，直接得出函數的導數。
       </p>

@@ -13,16 +13,6 @@ export default function Calculus_2_3() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        2.3 無窮極限與漸近線 (Infinite Limits & Asymptotes)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         在本節中，我們將探討函數在某點附近「無限增大或減小」的行為，以及當自變數往正負無窮遠處逼近時函數的趨勢。這些現象在幾何上對應於曲線的<b>漸近線 (Asymptotes)</b>。透過本單元，您將學習到如何利用極限符號描述這些無窮行為、理解其嚴格的數學定義，並掌握求取垂直漸近線、水平漸近線與斜漸近線的系統性方法。
       </p>

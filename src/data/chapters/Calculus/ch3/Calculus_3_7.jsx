@@ -22,16 +22,6 @@ export default function Calculus_3_7() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        3.7 對數微分法與高階導數 (Logarithmic Differentiation & Higher-Order Derivatives)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         在本節中，我們將介紹兩種進階的求導技巧與觀念。第一是**對數微分法**，這是一種利用對數律來簡化複雜乘除分式或指數函數的強大技巧；第二是**高階導數**，即對導函數再次求導的過程，這在物理學（如加速度）與幾何學（如曲線凹凸性）中扮演著關鍵角色。
       </p>

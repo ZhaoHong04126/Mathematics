@@ -21,16 +21,6 @@ export default function Calculus_2_5() {
   return (
     <div className="limit-formulas-grid">
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        2.5 常用極限公式彙整 (Common Limit Formulas)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         在處理極限問題時，除了使用極限的運算法則與夾擠定理外，熟記一些核心函數的「常用極限公式」可以幫助我們快速化簡與求解。以下彙整了微積分中在有理函數、無理函數、三角函數、指數函數與對數函數下最常遇到的基礎極限公式。
       </p>

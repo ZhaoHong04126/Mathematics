@@ -14,16 +14,6 @@ export default function Calculus_2_2() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        2.2 極限的嚴格定義與運算法則 (Rigorous Definition & Limit Laws)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         在上一節中，我們用「逼近」、「靠近」等直觀詞彙來理解極限。然而，這些詞彙在嚴謹的數學推導中不夠精確。為了消除模糊性，十九世紀以柯西 (Cauchy) 為首的數學家們開始嘗試引入嚴格定義，並最終由魏爾斯特拉斯 (Weierstrass) 確立了極限的嚴格 <MathInline math="\varepsilon-\delta" /> 定義。有了這個定義，我們不僅能嚴格論證單點的極限，更能將本節所介紹的各種「運算法則」與「夾擠定理」給予完美的證明。
       </p>

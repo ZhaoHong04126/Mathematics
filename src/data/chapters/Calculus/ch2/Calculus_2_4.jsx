@@ -13,16 +13,6 @@ export default function Calculus_2_4() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        2.4 函數的連續性與重要定理 (Continuity & Key Theorems)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         在研究函數的極限後，下一個最自然的幾何特徵便是「連續性 (Continuity)」。直觀而言，若一個函數的圖形可以「一筆畫」完成，沒有任何中斷、跳躍或空心點，我們就說該函數是連續的。在本節中，我們將透過極限給予連續性嚴謹的數學定義，分類常見的不連續點，並深入探討三個極具學術價值的存在性定理：<b>極值定理 (EVT)</b>、<b>介值定理 (IVT)</b> 與其衍生應用<b>勘根定理</b>。
       </p>

@@ -22,17 +22,8 @@ export default function Calculus_3_8() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
+      {/* 標題與引言 */}
       <header>
-        <h2 style={{ 
-          borderLeft: '4px solid var(--accent-primary)', 
-          paddingLeft: '12px', 
-          margin: '0 0 16px 0', 
-          fontSize: '1.6rem',
-          color: 'var(--text-primary)',
-          fontWeight: '600'
-        }}>
-          3.8 (補充) 雙曲函數的導數與反函數的導數
-        </h2>
         <p style={{ margin: '0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
           本節將介紹雙曲函數以及反雙曲函數的導數公式。這些函數在工程與物理的某些領域中非常實用，並且它們的導數公式與三角函數有許多相似之處。
         </p>

@@ -4,16 +4,7 @@ export default function Ch1_1_1() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        1. 何謂函數 ? (What is a Function?)
-      </h2>
+
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         在探討微積分之前，我們必須先釐清「函數」這個核心工具。它不僅僅是一個公式，更是一個描述「輸入點」與「輸出點」之間唯一性關係的結構。
       </p>

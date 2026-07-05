@@ -14,16 +14,6 @@ export default function Calculus_3_2() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        3.2 導數函數與可微性 (Derivative Functions and Differentiability)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         在上一節中，我們定義了函數在單一特定點 <MathInline math="x = a" /> 處的導數。如果我們將這個點視為一個可以自由變動的變數 <MathInline math="x" />，那麼對每一個能計算出導數的 <MathInline math="x" />，都對應著一個新的導數值。這就產生了一個全新的函數，稱為該函數的<strong>導函數（Derivative Function）</strong>，簡稱<strong>導數</strong>。本單元將深入探討導函數的數學定義，並釐清函數的「可微性」與「連續性」之間至關重要的關聯。
       </p>

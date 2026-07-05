@@ -103,8 +103,17 @@ export default function LR5() {
               </td>
             </tr>
             <tr>
+              <td style={{ ...tdStyle, ...dateStyle }}>2026-07-05</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.6 介面與內容微調</td>
+              <td style={tdStyle}>
+                - 移除重複的標題顯示<br />
+                - 完成 [ 3.8 雙曲函數的導數與反函數的導數 ] 內容編製<br />
+                - 持續進行版面與內容細節優化
+              </td>
+            </tr>
+            <tr>
               <td style={{ ...tdStyle, ...dateStyle }}>未來規劃</td>
-              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.6 持續撰寫與優化</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.7 持續撰寫與優化</td>
               <td style={tdStyle}>
                 - 繼續完成後續微積分章節<br />
                 - 逐步豐富例題與隨堂練習解答

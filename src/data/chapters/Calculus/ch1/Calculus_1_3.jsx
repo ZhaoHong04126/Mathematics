@@ -4,16 +4,6 @@ export default function Ch1_1_3() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        1.3 合成函數與反函數 (Composite & Inverse Functions)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         在數學中，我們可以透過「合成」將多個簡單函數組合為更複雜的函數；相反地，當我們已知一個函數的對應關係時，我們有時會想進行「逆向操作」——即從輸出找回原本的輸入，這就引進了反函數的概念。本單元將詳細探討合成函數的建構與定義域限制，以及反函數的存在條件與求解方法。
       </p>

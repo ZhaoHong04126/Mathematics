@@ -77,16 +77,6 @@ export default function Calculus_3_1() {
   return (
     <div>
       {/* 標題與引言 */}
-      <h2 style={{ 
-        borderLeft: '4px solid var(--accent-primary)', 
-        paddingLeft: '12px', 
-        margin: '24px 0 16px 0', 
-        fontSize: '1.6rem',
-        color: 'var(--text-primary)',
-        fontWeight: '600'
-      }}>
-        3.1 導數的定義與切線斜率 (Definition of Derivatives and Slope of Tangent Lines)
-      </h2>
       <p style={{ margin: '16px 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.8' }}>
         微積分的誕生主要源於兩個經典的幾何與物理問題：一是「如何求取曲線在某一點的切線斜率」（微分學的核心），二是「如何求取曲線下方所圍成的面積」（積分學的核心）。在本單元中，我們將透過極限的觀念，精確定義「切線斜率」以及函數在某一點的「導數」。
       </p>
