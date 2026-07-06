@@ -26,6 +26,10 @@ import Calculus_3_7 from './chapters/Calculus/ch3/Calculus_3_7';
 import Calculus_3_8 from './chapters/Calculus/ch3/Calculus_3_8';
 
 import Calculus_Ch4_Overview from './chapters/Calculus/ch4/Calculus_Ch4_Overview';
+import Calculus_4_1 from './chapters/Calculus/ch4/Calculus_4_1';
+import Calculus_4_2 from './chapters/Calculus/ch4/Calculus_4_2';
+import Calculus_4_3 from './chapters/Calculus/ch4/Calculus_4_3';
+import Calculus_4_4 from './chapters/Calculus/ch4/Calculus_4_4';
 
 import LR5 from './chapters/info/LR_5';
 
@@ -164,22 +168,22 @@ export const chaptersData = [
           { 
             id: "1-4-1", 
             title: "4.1 導函數與函數性質", 
-            content: "未有此內容" 
+            component: Calculus_4_1 
           },
           { 
             id: "1-4-2", 
             title: "4.2 極值問題", 
-            content: "未有此內容" 
+            component: Calculus_4_2 
           },
           { 
             id: "1-4-3", 
             title: "4.3 均值定理", 
-            content: "未有此內容" 
+            component: Calculus_4_3 
           },
           { 
             id: "1-4-4", 
             title: "4.4 洛必達法則", 
-            content: "未有此內容" 
+            component: Calculus_4_4 
           }
         ]
       },

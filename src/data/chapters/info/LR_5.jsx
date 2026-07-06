@@ -112,10 +112,19 @@ export default function LR5() {
               </td>
             </tr>
             <tr>
-              <td style={{ ...tdStyle, ...dateStyle }}>未來規劃</td>
-              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.7 持續撰寫與優化</td>
+              <td style={{ ...tdStyle, ...dateStyle }}>2026-07-06</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.7 製作微積分第四章與動態模擬</td>
               <td style={tdStyle}>
-                - 繼續完成後續微積分章節<br />
+                - 完成第四章導數應用 [ 4.1 ~ 4.4 ] 講義內容編製<br />
+                - 實作羅爾定理、均值定理與洛必達法則的動態幾何互動模擬元件<br />
+                - 整合折疊式證明（Proof）與課後練習題之詳細步驟解答
+              </td>
+            </tr>
+            <tr>
+              <td style={{ ...tdStyle, ...dateStyle }}>未來規劃</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.8 製作第五章與後續優化</td>
+              <td style={tdStyle}>
+                - 繼續完成後續微積分章節（第五章積分）<br />
                 - 逐步豐富例題與隨堂練習解答
               </td>
             </tr>
