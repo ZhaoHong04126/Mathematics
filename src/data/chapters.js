@@ -25,12 +25,16 @@ import Calculus_3_6 from './chapters/Calculus/ch3/Calculus_3_6';
 import Calculus_3_7 from './chapters/Calculus/ch3/Calculus_3_7';
 import Calculus_3_8 from './chapters/Calculus/ch3/Calculus_3_8';
 
+
 import Calculus_Ch4_Overview from './chapters/Calculus/ch4/Calculus_Ch4_Overview';
 import Calculus_4_1 from './chapters/Calculus/ch4/Calculus_4_1';
 import Calculus_4_2 from './chapters/Calculus/ch4/Calculus_4_2';
 import Calculus_4_3 from './chapters/Calculus/ch4/Calculus_4_3';
 import Calculus_4_4 from './chapters/Calculus/ch4/Calculus_4_4';
 
+
+import Calculus_Ch5_Overview from './chapters/Calculus/ch5/Calculus_Ch5_Overview';
+import Calculus_Ch6_Overview from './chapters/Calculus/ch6/Calculus_Ch6_Overview';
 import LR5 from './chapters/info/LR_5';
 
 export const chaptersData = [
@@ -191,15 +195,74 @@ export const chaptersData = [
       {
         id: "1-5",
         title: "第五章：積分",
-        content: "未有此內容",
-        // component: [] // Calculus_5_1
+        component: Calculus_Ch5_Overview,
+        subtopics: [
+          {
+            id: "1-5-1",
+            title: "5.1 反導函數",
+            content: "未有此內容",
+            // component: Calculus_5_1
+          },
+          {
+            id: "1-5-2",
+            title: "5.2 面積問題",
+            content: "未有此內容"
+          },
+          {
+            id: "1-5-3",
+            title: "5.3 定積分",
+            content: "未有此內容"
+          },
+          {
+            id: "1-5-4",
+            title: "5.4 微積分基本定理 (FTC)",
+            content: "未有此內容"
+          },
+          {
+            id: "1-5-5",
+            title: "5.5 不定積分",
+            content: "未有此內容",
+            // component: Calculus_5_5
+          }
+        ]
       },
       // 第六章：積分技巧
       {
         id: "1-6",
         title: "第六章：積分技巧",
-        content: "未有此內容",
-        // component: [] // Calculus_6_1
+        component: Calculus_Ch6_Overview,
+        subtopics: [
+          {
+            id: "1-6-1",
+            title: "6.1 代換積分法",
+            content: "未有此內容"
+          },
+          {
+            id: "1-6-2",
+            title: "6.2 分部積分法",
+            content: "未有此內容"
+          },
+          {
+            id: "1-6-3",
+            title: "6.3 三角積分",
+            content: "未有此內容"
+          },
+          {
+            id: "1-6-4",
+            title: "6.4 三角代換法",
+            content: "未有此內容"
+          },
+          {
+            id: "1-6-5",
+            title: "6.5 部分分式積分法",
+            content: "未有此內容"
+          },
+          {
+            id: "1-6-6",
+            title: "6.6 瑕積分",
+            content: "未有此內容"
+          }
+        ]
       },
       // 第七章：無窮數列與級數
       {
