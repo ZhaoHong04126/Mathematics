@@ -121,11 +121,18 @@ export default function LR5() {
               </td>
             </tr>
             <tr>
-              <td style={{ ...tdStyle, ...dateStyle }}>未來規劃</td>
-              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.8 製作第五章與後續優化</td>
+              <td style={{ ...tdStyle, ...dateStyle }}>2026-07-09</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.8 製作微積分第五章與介面排版優化</td>
               <td style={tdStyle}>
-                - 繼續完成後續微積分章節（第五章積分）<br />
-                - 逐步豐富例題與隨堂練習解答
+                - 完成第五章積分 [ 5.1 反導函數、5.2 面積問題、5.3 定積分 ] 講義內容編製
+              </td>
+            </tr>
+            <tr>
+              <td style={{ ...tdStyle, ...dateStyle }}>未來規劃</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v0.9 製作第六章與積分方法</td>
+              <td style={tdStyle}>
+                - 繼續完成後續微積分章節（第六章積分應用、第七章積分方法）<br />
+                - 逐步豐富課後練習題與幾何模擬互動元件
               </td>
             </tr>
           </tbody>

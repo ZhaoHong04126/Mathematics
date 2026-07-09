@@ -34,6 +34,9 @@ import Calculus_4_4 from './chapters/Calculus/ch4/Calculus_4_4';
 
 
 import Calculus_Ch5_Overview from './chapters/Calculus/ch5/Calculus_Ch5_Overview';
+import Calculus_5_1 from './chapters/Calculus/ch5/Calculus_5_1';
+import Calculus_5_2 from './chapters/Calculus/ch5/Calculus_5_2';
+import Calculus_5_3 from './chapters/Calculus/ch5/Calculus_5_3';
 import Calculus_Ch6_Overview from './chapters/Calculus/ch6/Calculus_Ch6_Overview';
 import LR5 from './chapters/info/LR_5';
 
@@ -200,18 +203,17 @@ export const chaptersData = [
           {
             id: "1-5-1",
             title: "5.1 反導函數",
-            content: "未有此內容",
-            // component: Calculus_5_1
+            component: Calculus_5_1
           },
           {
             id: "1-5-2",
             title: "5.2 面積問題",
-            content: "未有此內容"
+            component: Calculus_5_2
           },
           {
             id: "1-5-3",
             title: "5.3 定積分",
-            content: "未有此內容"
+            component: Calculus_5_3
           },
           {
             id: "1-5-4",

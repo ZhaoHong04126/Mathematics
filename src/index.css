@@ -957,3 +957,16 @@ h1, h2, h3, h4, h5, h6 {
   width: 100% !important;
   margin: 4px 0 !important;
 }
+
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .grid-2x2 {
+    grid-template-columns: 1fr;
+  }
+}
+
