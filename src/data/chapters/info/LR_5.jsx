@@ -148,7 +148,8 @@ export default function LR5() {
               <td style={tdStyle}>
                 - 實作客戶端 Hash 路由，支援「先科目、後單元」的三層網址層級（例如：`#/Calculus/Functions/1.1`）<br />
                 - 支援網址小數點段落（如 `1.1`）與內部 ID（如 `1-1-1`）雙向映射解析，並保持舊網址相容性<br />
-                - 全面修正所有講義檔案中的區塊嵌套問題，徹底消除 React 主控台的 DOM Hydration 嵌套警告
+                - 全面修正所有講義檔案中的區塊嵌套問題，徹底消除 React 主控台的 DOM Hydration 嵌套警告<br />
+                - 重構 App.jsx 中的輔助函數，改善代碼可讀性與一致性
               </td>
             </tr>
             <tr>
