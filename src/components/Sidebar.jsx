@@ -8,10 +8,10 @@ export default function Sidebar({
   setMobileOpen
 }) {
   const [expandedChapters, setExpandedChapters] = useState({
-    ch1: false,  // 微積分
-    ch2: false,  // 線性代數
-    ch3: false, // 多變量微積分
-    info: false // 資源
+    Calculus: false,  // 微積分
+    LinearAlgebra: false,  // 線性代數
+    MultivariableCalculus: false, // 多變量微積分
+    Info: false // 資源
   });
   const [expandedTopics, setExpandedTopics] = useState({});
 

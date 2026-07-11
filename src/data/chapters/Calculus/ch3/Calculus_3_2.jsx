@@ -90,24 +90,24 @@ export default function Calculus_3_2() {
         </p>
         
         <Proof title="點擊展開定理證明">
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             要證明 <MathInline math="f" /> 在點 <MathInline math="a" /> 處連續，根據極限定義，我們只需要證明：
             <MathBlock math="\lim_{x \to a} f(x) = f(a) \iff \lim_{x \to a} [f(x) - f(a)] = 0" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             由於 <MathInline math="f" /> 在點 <MathInline math="a" /> 可微，這意味著以下極限值存在且等於導數：
             <MathBlock math="\lim_{x \to a} \frac{f(x) - f(a)}{x - a} = f'(a)" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             當 <MathInline math="x \ne a" /> 時，我們可以進行恆等變形，寫出以下乘積形式：
             <MathBlock math="f(x) - f(a) = \frac{f(x) - f(a)}{x - a} \cdot (x - a)" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             兩邊同時取當 <MathInline math="x \to a" /> 時的極限，並利用極限的乘法則：
             <MathBlock math="\lim_{x \to a} [f(x) - f(a)] = \lim_{x \to a} \left[ \frac{f(x) - f(a)}{x - a} \cdot (x - a) \right]" />
             <MathBlock math="= \left( \lim_{x \to a} \frac{f(x) - f(a)}{x - a} \right) \cdot \left( \lim_{x \to a} (x - a) \right)" />
             <MathBlock math="= f'(a) \cdot 0 = 0" />
-          </p>
+          </div>
           <p>
             因此，我們證得了 <MathInline math="\lim_{x \to a} [f(x) - f(a)] = 0" />，即 <MathInline math="\lim_{x \to a} f(x) = f(a)" />。
             這說明函數 <MathInline math="f" /> 在 <MathInline math="x = a" /> 處連續。<span style={{ float: 'right' }}>■</span>
@@ -206,26 +206,26 @@ export default function Calculus_3_2() {
           <p style={{ marginBottom: '10px' }}>
             <strong>【分析與解答】</strong>：
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             根據導函數的極限定義，在定義域內任意 <MathInline math="x \ne 0" /> 處，我們有：
             <MathBlock math="f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             代入函數表達式：
             <MathBlock math="f'(x) = \lim_{h \to 0} \frac{\frac{1}{x+h} - \frac{1}{x}}{h}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             將分子進行通分整理：
             <MathBlock math="\frac{1}{x+h} - \frac{1}{x} = \frac{x - (x+h)}{x(x+h)} = \frac{-h}{x(x+h)}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             代回原極限式。由於極限討論中 <MathInline math="h \to 0" /> 代表 <MathInline math="h \ne 0" />，因此我們可以約去分子與分母中的公因子 <MathInline math="h" />：
             <MathBlock math="f'(x) = \lim_{h \to 0} \frac{\frac{-h}{x(x+h)}}{h} = \lim_{h \to 0} \frac{-h}{h \cdot x(x+h)} = \lim_{h \to 0} \frac{-1}{x(x+h)}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             此時直接代入 <MathInline math="h = 0" /> 求極限值：
             <MathBlock math="f'(x) = \frac{-1}{x(x + 0)} = -\frac{1}{x^2}" />
-          </p>
+          </div>
           <p>
             <strong>【結論】</strong>：倒數函數的導函數為 <MathInline math="f'(x) = -\frac{1}{x^2}" />。其導函數的定義域與原函數完全相同，均為 <MathInline math="x \ne 0" />。
           </p>
@@ -241,10 +241,10 @@ export default function Calculus_3_2() {
           <p style={{ marginBottom: '10px' }}>
             <strong>【分析與解答】</strong>：
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             我們需要檢驗在 <MathInline math="x = 0" /> 處的導數極限是否存在：
             <MathBlock math="f'(0) = \lim_{h \to 0} \frac{f(0 + h) - f(0)}{h} = \lim_{h \to 0} \frac{|h| - |0|}{h} = \lim_{h \to 0} \frac{|h|}{h}" />
-          </p>
+          </div>
           <p style={{ marginBottom: '10px' }}>
             由於絕對值函數具有方向性特徵，我們必須分別考慮左極限與右極限（即左導數與右導數）：
           </p>

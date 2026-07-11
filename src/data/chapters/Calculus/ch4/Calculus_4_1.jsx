@@ -590,24 +590,24 @@ export default function Calculus_4_1() {
           <p style={{ marginBottom: '10px' }}>
             <strong>【第一步：求一階導數與臨界點】</strong>
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             對 <MathInline math="f(x)" /> 微分一次：
             <MathBlock math="f'(x) = 12x^3 - 12x^2 - 24x" />
             將其因式分解：
             <MathBlock math="f'(x) = 12x(x^2 - x - 2) = 12x(x - 2)(x + 1)" />
             令 <MathInline math="f'(x) = 0" />，得到三個臨界點：<MathInline math="x = -1, 0, 2" />。
-          </p>
+          </div>
 
           <p style={{ margin: '14px 0 10px 0' }}>
             <strong>【第二步：求二階導數與反曲點候選點】</strong>
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             對 <MathInline math="f'(x)" /> 再微分一次：
             <MathBlock math="f''(x) = 36x^2 - 24x - 24 = 12(3x^2 - 2x - 2)" />
             令 <MathInline math="f''(x) = 0" />，利用公式解求得：
             <MathBlock math="x = \frac{-(-2) \pm \sqrt{(-2)^2 - 4(3)(-2)}}{2(3)} = \frac{2 \pm \sqrt{28}}{6} = \frac{1 \pm \sqrt{7}}{3}" />
             大約值為 <MathInline math="x \approx -0.55" /> 與 <MathInline math="x \approx 1.22" />。
-          </p>
+          </div>
 
           <p style={{ margin: '14px 0 10px 0' }}>
             <strong>【第三步：建立區間分析表】</strong>
@@ -666,10 +666,10 @@ export default function Calculus_4_1() {
             <li>當 <MathInline math="-0.55 < x < 1.22" /> 時，<MathInline math="f''(x) < 0" />，圖形<strong>凹向下</strong>。</li>
             <li>當 <MathInline math="x > 1.22" /> 時，<MathInline math="f''(x) > 0" />，圖形<strong>凹向上</strong>。</li>
           </ul>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             因為二階導數在 <MathInline math="x = \frac{1\pm\sqrt{7}}{3}" /> 兩側皆變號，故這兩個點對應圖形上的點為<strong>反曲點</strong>，座標分別為：
             <MathBlock math="\left( -0.55, f(-0.55) \right) \approx (-0.55, 2.14) \quad \text{與} \quad \left( 1.22, f(1.22) \right) \approx (1.22, -13.36)" />
-          </p>
+          </div>
 
           <p>
             <strong>【繪圖特徵總結】</strong>：
@@ -686,14 +686,14 @@ export default function Calculus_4_1() {
           設函數 <MathInline math="f(x) = x e^{-x}" />，試分析其在實數域上的單調區間、極值與反曲點。
         </p>
         <Solution>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             <strong>【第一步：求一階導數與臨界點】</strong>
             <br />
             利用乘積微分法則對 <MathInline math="f(x) = x e^{-x}" /> 求導：
             <MathBlock math="f'(x) = 1 \cdot e^{-x} + x \cdot (-e^{-x}) = (1 - x)e^{-x}" />
             因為對於任何實數 <MathInline math="x" />，指數部分 <MathInline math="e^{-x}" /> 恆大於 0。
             因此，令 <MathInline math="f'(x) = 0" /> 可解得唯一的臨界點為 <MathInline math="x = 1" />。
-          </p>
+          </div>
           <p style={{ marginBottom: '10px' }}>
             <strong>【第二步：分析單調性與極值】</strong>
             <br />
@@ -703,18 +703,18 @@ export default function Calculus_4_1() {
             <li>當 <MathInline math="x < 1" /> 時，<MathInline math="1 - x > 0" />，所以 <MathInline math="f'(x) > 0" />（函數遞增）。</li>
             <li>當 <MathInline math="x > 1" /> 時，<MathInline math="1 - x < 0" />，所以 <MathInline math="f'(x) < 0" />（函數遞減）。</li>
           </ul>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             因為一階導數在 <MathInline math="x = 1" /> 處由正變負，根據一階導數測試法，函數在該點有局部極大值：
             <MathBlock math="f(1) = 1 \cdot e^{-1} = \frac{1}{e} \approx 0.368" />
-          </p>
+          </div>
 
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             <strong>【第三步：求二階導數與反曲點】</strong>
             <br />
             對一階導數再次求導：
             <MathBlock math="f''(x) = -1 \cdot e^{-x} + (1 - x)(-e^{-x}) = (x - 2)e^{-x}" />
             令 <MathInline math="f''(x) = 0" /> 得到唯一的候選點為 <MathInline math="x = 2" />。
-          </p>
+          </div>
           <p style={{ marginBottom: '10px' }}>
             觀察二階導數的變號情況：
           </p>
@@ -730,10 +730,10 @@ export default function Calculus_4_1() {
 
       {/* 例題 3 */}
       <Example title="3：探討二階導數測試法失效的狀況">
-        <p style={{ color: 'var(--text-secondary)' }}>
+        <div style={{ color: 'var(--text-secondary)' }}>
           比較以下三個函數在 <MathInline math="x = 0" /> 處的導數與極值，並說明為何當二階導數為 0 時，二階導數測試法失效：
           <MathBlock math="(a) \ f(x) = x^4 \quad\quad (b) \ g(x) = -x^4 \quad\quad (c) \ h(x) = x^3" />
-        </p>
+        </div>
         <Solution>
           <p style={{ marginBottom: '10px' }}>
             我們分別計算三個函數在原點的導數特徵：

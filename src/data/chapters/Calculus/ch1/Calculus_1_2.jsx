@@ -151,11 +151,11 @@ export default function Ch1_1_2() {
           <p style={{ fontWeight: '600', color: 'var(--text-primary)', marginBottom: '6px' }}>
             (2) 求解與 x 軸的交點：
           </p>
-          <p style={{ color: 'var(--text-secondary)', lineHeight: '1.7' }}>
+          <div style={{ color: 'var(--text-secondary)', lineHeight: '1.7' }}>
             令 <MathInline math="P(x) = 0" />，可直接從因式分解形式得到：
             <MathBlock math="(x-2)(x+3)(4-x) = 0 \implies x = 2, -3, 4" />
             因此，該多項式函數與 <MathInline math="x" /> 軸的交點坐標為 <strong><MathInline math="(2, 0), (-3, 0), (4, 0)" /></strong>。
-          </p>
+          </div>
         </Solution>
       </Example>
     </div>

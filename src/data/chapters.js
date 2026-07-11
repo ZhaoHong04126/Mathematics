@@ -47,13 +47,13 @@ import LR5 from './chapters/info/LR_5';
 export const chaptersData = [
   // 1. 微積分
   {
-    id: "ch1",
+    id: "Calculus",
     title: "微積分",
     content: "",
     topics: [
       // 第一章：函數
       {
-        id: "1-1",
+        id: "Functions",
         title: "第一章：函數",
         component: Calculus_Ch1_Overview,
         subtopics: [
@@ -91,7 +91,7 @@ export const chaptersData = [
       },
       // 第二章：極限與連續性
       {
-        id: "1-2",
+        id: "Limits",
         title: "第二章：極限與連續性",
         component: Calculus_Ch2_Overview,
         subtopics: [
@@ -124,7 +124,7 @@ export const chaptersData = [
       },
       // 第三章：微分
       {
-        id: "1-3",
+        id: "Derivatives",
         title: "第三章：微分",
         component: Calculus_Ch3_Overview,
         subtopics: [
@@ -172,7 +172,7 @@ export const chaptersData = [
       },
       // 第四章：微分的應用
       {
-        id: "1-4",
+        id: "DerivativeApplications",
         title: "第四章：微分的應用",
         component: Calculus_Ch4_Overview,
         subtopics: [
@@ -200,7 +200,7 @@ export const chaptersData = [
       },
       // 第五章：積分
       {
-        id: "1-5",
+        id: "Integrals",
         title: "第五章：積分",
         component: Calculus_Ch5_Overview,
         subtopics: [
@@ -233,7 +233,7 @@ export const chaptersData = [
       },
       // 第六章：積分技巧
       {
-        id: "1-6",
+        id: "IntegrationTechniques",
         title: "第六章：積分技巧",
         component: Calculus_Ch6_Overview,
         subtopics: [
@@ -271,7 +271,7 @@ export const chaptersData = [
       },
       // 第七章：無窮數列與級數
       {
-        id: "1-7",
+        id: "InfiniteSeries",
         title: "第七章：無窮數列與級數",
         content: "未有此內容",
         // component: [] // Calculus_7_1
@@ -281,77 +281,23 @@ export const chaptersData = [
 
   // 2. 線性代數
   {
-    id: "ch2",
+    id: "LinearAlgebra",
     title: "線性代數",
     content: "",
-    topics: [
-    //   {
-    //     id: "2-1",
-    //     title: "第一章：矩陣與行列式",
-    //     subtopics: [
-    //       {
-    //         id: "2-1-1",
-    //         title: "1.1 矩陣運算與基本性質",
-    //         content: "未有此內容"
-    //       },
-    //       {
-    //         id: "2-1-2",
-    //         title: "1.2 行列式的幾何意義與計算",
-    //         content: "未有此內容"
-    //       }
-    //     ]
-    //   },
-    //   {
-    //     id: "2-2",
-    //     title: "第二章：向量空間",
-    //     content: "未有此內容"
-    //   },
-    //   {
-    //     id: "2-3",
-    //     title: "第三章：特徵值與特徵向量",
-    //     content: "未有此內容"
-    //   }
-    ]
+    topics: []
   },
 
   // 3. 多變量微積分
   {
-    id: "ch3",
+    id: "MultivariableCalculus",
     title: "多變量微積分",
     content: "",
-    topics: [
-      // {
-      //   id: "3-1",
-      //   title: "第一章：空間幾何與偏導函數",
-      //   subtopics: [
-      //     {
-      //       id: "3-1-1",
-      //       title: "1.1 偏導數與切平面",
-      //       content: "未有此內容"
-      //     },
-      //     {
-      //       id: "3-1-2",
-      //       title: "1.2 方向導數與梯度",
-      //       content: "未有此內容"
-      //     }
-      //   ]
-      // },
-      // {
-      //   id: "3-2",
-      //   title: "第二章：多重積分",
-      //   content: "未有此內容"
-      // },
-      // {
-      //   id: "3-3",
-      //   title: "第三章：向量微積分",
-      //   content: "未有此內容"
-      // }
-    ]
+    topics: []
   },
 
   // 4. 機率論
   {
-    id: "ch4",
+    id: "ProbabilityTheory",
     title: "機率論",
     content: "",
     topics: []
@@ -359,28 +305,28 @@ export const chaptersData = [
 
   // 5. 數學財務經濟
   {
-    id: "ch5",
+    id: "MathematicalFinance",
     title: "數學財務經濟",
     content: "",
     topics: []
   },
   // 6. 資訊與資源
   {
-    id: "info",
+    id: "Info",
     title: "資訊與資源",
     topics: [
       {
-        id: "LR-1",
+        id: "OnlineResources",
         title: "線上學習資源",
         content: "未有此內容"
       },
       {
-        id: "LR-2",
+        id: "RecommendedBooks",
         title: "教材與書籍推薦",
         content: "未有此內容"
       },
       {
-        id: "LR-5",
+        id: "DevelopmentLog",
         title: "本網頁撰寫路程與記錄",
         component: LR5
       }

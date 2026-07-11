@@ -60,24 +60,24 @@ export default function Calculus_3_7() {
           <p style={{ marginBottom: '10px' }}>
             由於底數和指數都含有變數 <MathInline math="x" />，我們無法直接使用冪函數法則（底數為變數、指數為常數）或指數函數法則（底數為常數、指數為變數）。必須使用對數微分法。
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             <strong>步驟一：兩邊取自然對數</strong>
             <MathBlock math="\ln y = \ln(x^x)" />
             利用對數律將指數移到前面：
             <MathBlock math="\ln y = x \ln x" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             <strong>步驟二：兩邊同時對 x 求導</strong>
             左邊使用隱函數微分，右邊使用乘法法則：
             <MathBlock math="\frac{1}{y} \frac{dy}{dx} = 1 \cdot \ln x + x \cdot \frac{1}{x}" />
             <MathBlock math="\frac{1}{y} \frac{dy}{dx} = \ln x + 1" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             <strong>步驟三：移項並替換 y</strong>
             <MathBlock math="\frac{dy}{dx} = y (\ln x + 1)" />
             將 <MathInline math="y = x^x" /> 代回：
             <MathBlock math="\frac{dy}{dx} = x^x (\ln x + 1)" />
-          </p>
+          </div>
           <p>
             <strong>【結論】</strong>：
             導函數為 <MathInline math="y' = x^x (\ln x + 1)" />。
@@ -126,22 +126,22 @@ export default function Calculus_3_7() {
           <p style={{ marginBottom: '10px' }}>
             我們逐步求導，每次求導都運用基本法則和連鎖法則。
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             <strong>一階導數 <MathInline math="f'(x)" />：</strong>
             <MathBlock math="f'(x) = 4x^3 + \cos(2x) \cdot 2 = 4x^3 + 2\cos(2x)" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             <strong>二階導數 <MathInline math="f''(x)" />：</strong>
             <MathBlock math="f''(x) = \frac{d}{dx}[4x^3 + 2\cos(2x)] = 12x^2 + 2(-\sin(2x) \cdot 2) = 12x^2 - 4\sin(2x)" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             <strong>三階導數 <MathInline math="f'''(x)" />：</strong>
             <MathBlock math="f'''(x) = \frac{d}{dx}[12x^2 - 4\sin(2x)] = 24x - 4(\cos(2x) \cdot 2) = 24x - 8\cos(2x)" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             將 <MathInline math="x = 0" /> 代入三階導數中：
             <MathBlock math="f'''(0) = 24(0) - 8\cos(0) = 0 - 8(1) = -8" />
-          </p>
+          </div>
           <p>
             <strong>【結論】</strong>：
             二階導數為 <MathInline math="f''(x) = 12x^2 - 4\sin(2x)" />，三階導數在 <MathInline math="x=0" /> 的值為 <MathInline math="-8" />。

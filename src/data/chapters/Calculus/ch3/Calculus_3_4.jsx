@@ -185,19 +185,19 @@ export default function Calculus_3_4() {
           <p style={{ marginBottom: '10px' }}>
             <strong>【分析與解答】</strong>：
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             本題為乘積的形式，左項為 <MathInline math="u(x) = x^3" />，右項為 <MathInline math="v(x) = \sin x" />。
             我們分別求導：
             <MathBlock math="u'(x) = 3x^2 \quad \text{與} \quad v'(x) = \cos x" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             應用乘法法則 <MathInline math="f'(x) = u'(x)v(x) + u(x)v'(x)" /> 代入：
             <MathBlock math="f'(x) = (3x^2)(\sin x) + (x^3)(\cos x)" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             整理提出公因式 <MathInline math="x^2" />：
             <MathBlock math="f'(x) = x^2(3\sin x + x\cos x)" />
-          </p>
+          </div>
           <p>
             <strong>【結論】</strong>：
             導函數為 <MathInline math="f'(x) = x^2(3\sin x + x\cos x)" />。
@@ -214,19 +214,19 @@ export default function Calculus_3_4() {
           <p style={{ marginBottom: '10px' }}>
             <strong>【分析與解答】</strong>：
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             本題為商的形式，分子為 <MathInline math="u(x) = e^x" />，分母為 <MathInline math="v(x) = \cos x" />。
             我們分別求導：
             <MathBlock math="u'(x) = e^x \quad \text{與} \quad v'(x) = -\sin x" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             套用除法法則 <MathInline math="f'(x) = \frac{u'(x)v(x) - u(x)v'(x)}{[v(x)]^2}" /> 代入：
             <MathBlock math="f'(x) = \frac{(e^x)(\cos x) - (e^x)(-\sin x)}{\cos^2 x}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             在分子中提出公因式 <MathInline math="e^x" />，並注意負負得正：
             <MathBlock math="f'(x) = \frac{e^x(\cos x + \sin x)}{\cos^2 x}" />
-          </p>
+          </div>
           <p>
             <strong>【結論】</strong>：
             導函數為 <MathInline math="f'(x) = \frac{e^x(\cos x + \sin x)}{\cos^2 x}" />。
@@ -243,14 +243,14 @@ export default function Calculus_3_4() {
           <p style={{ marginBottom: '10px' }}>
             <strong>【分析與解答】</strong>：
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             原函數為兩部分相減，其中前項 <MathInline math="x \ln x" /> 需要使用乘法法則：
             <MathBlock math="\frac{d}{dx}(x \ln x) = (x)' \ln x + x (\ln x)' = 1 \cdot \ln x + x \cdot \frac{1}{x} = \ln x + 1" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             後項為簡單的 <MathInline math="x" />，其導數為 1。因此，將兩者組合：
             <MathBlock math="f'(x) = \frac{d}{dx}(x\ln x) - \frac{d}{dx}(x) = (\ln x + 1) - 1 = \ln x" />
-          </p>
+          </div>
           <p>
             <strong>【結論】</strong>：
             導函數為 <MathInline math="f'(x) = \ln x" />。

@@ -706,7 +706,7 @@ export default function Calculus_4_2() {
           <p style={{ marginBottom: '10px' }}>
             由於函數為多項式，在實數集上連續可微，我們可以使用閉區間法。
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             <strong>【第一步：求開區間內的臨界點】</strong>
             <br />
             對函數求導：
@@ -714,27 +714,27 @@ export default function Calculus_4_2() {
             令 <MathInline math="f'(x) = 0" />，求得臨界點為 <MathInline math="x = 0" /> 與 <MathInline math="x = 2" />。
             我們檢查這兩個點是否落在開區間 <MathInline math="(-0.5, 4)" /> 內：
             由於 <MathInline math="0 \in (-0.5, 4)" /> 且 <MathInline math="2 \in (-0.5, 4)" />，因此這兩個點皆為有效候選點。
-          </p>
-          <p style={{ marginBottom: '12px' }}>
+          </div>
+          <div style={{ marginBottom: '12px' }}>
             計算這兩點的函數值：
             <MathBlock math="f(0) = 0^3 - 3(0)^2 + 1 = 1" />
             <MathBlock math="f(2) = 2^3 - 3(2)^2 + 1 = 8 - 12 + 1 = -3" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             <strong>【第二步：求端點函數值】</strong>
             <br />
             區間端點分別為 <MathInline math="x = -0.5" /> 與 <MathInline math="x = 4" />。計算其函數值：
             <MathBlock math="f(-0.5) = (-0.5)^3 - 3(-0.5)^2 + 1 = -0.125 - 0.75 + 1 = 0.125" />
             <MathBlock math="f(4) = 4^3 - 3(4)^2 + 1 = 64 - 48 + 1 = 17" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             <strong>【第三步：比較數值做出結論】</strong>
             <br />
             列出所有候選函數值進行比較：
             <MathBlock math="f(0) = 1, \quad f(2) = -3, \quad f(-0.5) = 0.125, \quad f(4) = 17" />
             比較可知：
             絕對最大值為 <MathInline math="f(4) = 17" />，絕對最小值為 <MathInline math="f(2) = -3" />。
-          </p>
+          </div>
         </Solution>
       </Example>
 
@@ -745,14 +745,14 @@ export default function Calculus_4_2() {
           問該如何設計矩形的長與寬，才能使圍出的菜園面積最大？最大面積是多少？
         </p>
         <Solution>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             <strong>【第一步：繪圖與設定變數】</strong>
             <br />
             設與磚牆垂直的矩形兩邊寬為 <MathInline math="x" /> 米，與磚牆平行的矩形長為 <MathInline math="y" /> 米。
             我們要最大化的目標量為菜園面積 <MathInline math="A" />，其公式為：
             <MathBlock math="A = x \cdot y" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             <strong>【第二步：建立單變數目標函數與限制條件】</strong>
             <br />
             根據圍籬總長度的限制條件，三面圍籬的長度之和必須等於 100 米：
@@ -761,22 +761,22 @@ export default function Calculus_4_2() {
             <MathBlock math="A(x) = x(100 - 2x) = 100x - 2x^2" />
             考慮自變數 <MathInline math="x" /> 的物理限制：寬度 <MathInline math="x" /> 必須大於 0；且因為圍籬總長為 100 米，<MathInline math="2x < 100 \implies x < 50" />。
             因此定義域為閉區間 <MathInline math="[0, 50]" />（在端點 0 和 50 處，面積均為 0，無實質幾何意義，但可用於數學檢驗）。
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             <strong>【第三步：微分求臨界點】</strong>
             <br />
             對面積函數求導：
             <MathBlock math="A'(x) = 100 - 4x" />
             令 <MathInline math="A'(x) = 0" />，可解得臨界點：
             <MathBlock math="100 - 4x = 0 \implies x = 25 \text{ 米}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             <strong>【第四步：極值確認與結論】</strong>
             <br />
             我們計算端點與臨界點的函數值：
             <MathBlock math="A(0) = 0, \quad A(50) = 0, \quad A(25) = 25(100 - 50) = 1250 \text{ 平方米}" />
             （亦可使用二階導數測試：<MathInline math="A''(x) = -4 < 0" />，說明該函數為凹向下，臨界點處必定是局部最大值且為全域最大值。）
-          </p>
+          </div>
           <p>
             當垂直於牆壁的寬度設計為 <MathInline math="x = 25" /> 米，平行於牆壁的長度設計為 <MathInline math="y = 100 - 2(25) = 50" /> 米時，能圍出最大的菜園面積為 <strong><MathInline math="1250" /> 平方米</strong>。
           </p>
@@ -790,7 +790,7 @@ export default function Calculus_4_2() {
           問應如何選擇底面半徑 <MathInline math="r" /> 與高 <MathInline math="h" /> 的尺寸，才能使製作該罐所消耗的鐵皮表面積最小（最節省成本）？
         </p>
         <Solution>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             <strong>【第一步：幾何公式與限制條件】</strong>
             <br />
             設圓柱體的底面半徑為 <MathInline math="r" />，高為 <MathInline math="h" />。
@@ -798,15 +798,15 @@ export default function Calculus_4_2() {
             <MathBlock math="V = \pi r^2 h = 1000 \implies h = \frac{1000}{\pi r^2}" />
             我們的目標是要使圓柱罐的總表面積（包括頂蓋、底面與側面）最小。總表面積 <MathInline math="S" /> 公式為：
             <MathBlock math="S = 2\pi r^2 + 2\pi r h" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             <strong>【第二步：消去變數建立目標函數】</strong>
             <br />
             將 <MathInline math="h = \frac{1000}{\pi r^2}" /> 代入表面積公式中：
             <MathBlock math="S(r) = 2\pi r^2 + 2\pi r \left( \frac{1000}{\pi r^2} \right) = 2\pi r^2 + \frac{2000}{r}" />
             考慮物理限制，半徑 <MathInline math="r" /> 必須大於 0，因此定義域為開區間 <MathInline math="(0, \infty)" />。
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             <strong>【第三步：微分與求臨界點】</strong>
             <br />
             對 <MathInline math="S(r)" /> 進行微分：
@@ -815,19 +815,19 @@ export default function Calculus_4_2() {
             <MathBlock math="4\pi r - \frac{2000}{r^2} = 0 \iff 4\pi r^3 = 2000 \iff r^3 = \frac{500}{\pi}" />
             解得唯一臨界點為：
             <MathBlock math="r = \sqrt[3]{\frac{500}{\pi}} \approx 5.42 \text{ cm}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             <strong>【第四步：確認最小值】</strong>
             <br />
             對 <MathInline math="S'(r)" /> 再次求導得二階導數：
             <MathBlock math="S''(r) = 4\pi + \frac{4000}{r^3}" />
             當 <MathInline math="r > 0" /> 時，顯然有二階導數 <MathInline math="S''(r) > 0" />（圖形凹向上）。
             根據二階導數極值測試法，該臨界點確實為函數的唯一絕對最小值。
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             此時，我們計算罐子的高 <MathInline math="h" /> 與半徑 <MathInline math="r" /> 的關係：
             <MathBlock math="h = \frac{1000}{\pi r^2} = \frac{2 \cdot 500}{\pi \cdot r^2} = \frac{2 \cdot \pi r^3}{\pi r^2} = 2r" />
-          </p>
+          </div>
           <p>
             當設計圓柱罐的高等於底面直徑（即 <MathInline math="h = 2r \approx 10.84 \text{ cm}" />，底面半徑 <MathInline math="r \approx 5.42 \text{ cm}" />）時，能使製作該罐所消耗的材料表面積最小，此最小表面積大約為 <MathInline math="S(5.42) \approx 554 \text{ cm}^2" />。
           </p>

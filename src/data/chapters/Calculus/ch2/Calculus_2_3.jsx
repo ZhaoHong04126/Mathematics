@@ -224,14 +224,14 @@ export default function Calculus_2_3() {
       </p>
 
       <Definition title="在無窮遠處的極限直觀定義">
-        <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
+        <div style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
           1. 設函數 <MathInline math="f" /> 在區間 <MathInline math="(a, \infty)" /> 上有定義。若當 <MathInline math="x" /> 無限變大時，<MathInline math="f(x)" /> 的值能任意靠近實數 <MathInline math="L" />，我們記作：
           <MathBlock math="\lim_{x \to \infty} f(x) = L" />
-        </p>
-        <p style={{ color: 'var(--text-secondary)', lineHeight: '1.8', marginTop: '12px' }}>
+        </div>
+        <div style={{ color: 'var(--text-secondary)', lineHeight: '1.8', marginTop: '12px' }}>
           2. 設函數 <MathInline math="f" /> 在區間 <MathInline math="(-\infty, b)" /> 上有定義。若當 <MathInline math="x" /> 無限變小（朝負方向絕對值無限增大）時，<MathInline math="f(x)" /> 的值能任意靠近實數 <MathInline math="L" />，我們記作：
           <MathBlock math="\lim_{x \to -\infty} f(x) = L" />
-        </p>
+        </div>
       </Definition>
 
       <Definition title="水平漸近線 (Horizontal Asymptote)">

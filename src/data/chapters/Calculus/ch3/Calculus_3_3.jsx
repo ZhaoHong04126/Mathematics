@@ -165,22 +165,22 @@ export default function Calculus_3_3() {
         </p>
         
         <Proof title="點擊展開：乘法法則的極限證明">
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             設 <MathInline math="F(x) = f(x)g(x)" />。利用導函數定義計算其導數：
             <MathBlock math="F'(x) = \lim_{h \to 0} \frac{f(x+h)g(x+h) - f(x)g(x)}{h}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             這時我們利用微積分中非常經典的技巧——在分子中<strong>同時加上與減去一項相同的項</strong> <MathInline math="f(x+h)g(x)" />：
             <MathBlock math="F'(x) = \lim_{h \to 0} \frac{f(x+h)g(x+h) - f(x+h)g(x) + f(x+h)g(x) - f(x)g(x)}{h}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             將分式拆分為兩部分，並提出公因式：
             <MathBlock math="= \lim_{h \to 0} \left[ f(x+h) \cdot \frac{g(x+h) - g(x)}{h} + g(x) \cdot \frac{f(x+h) - f(x)}{h} \right]" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             利用極限的四則運算法則展開：
             <MathBlock math="= \left( \lim_{h \to 0} f(x+h) \right) \cdot \left( \lim_{h \to 0} \frac{g(x+h) - g(x)}{h} \right) + g(x) \cdot \left( \lim_{h \to 0} \frac{f(x+h) - f(x)}{h} \right)" />
-          </p>
+          </div>
           <div style={{ lineHeight: '1.7' }}>
             由於 <MathInline math="f" /> 可微，根據「可微必連續」，我們有 <MathInline math="\lim_{h \to 0} f(x+h) = f(x)" />。而另外兩個極限式正好是 <MathInline math="f'(x)" /> 與 <MathInline math="g'(x)" /> 的定義。代回整理得：
             <MathBlock math="F'(x) = f(x)g'(x) + g(x)f'(x)" />
@@ -210,22 +210,22 @@ export default function Calculus_3_3() {
         </p>
 
         <Proof title="點擊展開：除法法則的極限證明">
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             設 <MathInline math="Q(x) = \frac{f(x)}{g(x)}" />。利用極限定義：
             <MathBlock math="Q'(x) = \lim_{h \to 0} \frac{\frac{f(x+h)}{g(x+h)} - \frac{f(x)}{g(x)}}{h}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             將分子通分：
             <MathBlock math="= \lim_{h \to 0} \frac{f(x+h)g(x) - f(x)g(x+h)}{h \cdot g(x+h)g(x)}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             同乘同加項的技巧，分子加減 <MathInline math="f(x)g(x)" />：
             <MathBlock math="= \lim_{h \to 0} \frac{[f(x+h)g(x) - f(x)g(x)] - [f(x)g(x+h) - f(x)g(x)]}{h \cdot g(x+h)g(x)}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             分拆並整理出導數定義式：
             <MathBlock math="= \lim_{h \to 0} \frac{g(x) \cdot \frac{f(x+h) - f(x)}{h} - f(x) \cdot \frac{g(x+h) - g(x)}{h}}{g(x+h)g(x)}" />
-          </p>
+          </div>
           <div style={{ lineHeight: '1.7' }}>
             由於 <MathInline math="g" /> 可微，其必連續，因此有 <MathInline math="\lim_{h \to 0} g(x+h) = g(x)" />。
             我們分別求分子與分母的極限：
@@ -249,18 +249,18 @@ export default function Calculus_3_3() {
           <p style={{ marginBottom: '10px' }}>
             <strong>【分析與解答】</strong>：
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             首先，為了方便使用冪法則，我們可以將最後的分式項寫成負指數的形式：
             <MathBlock math="\frac{4}{x^3} = 4x^{-3}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             此時，原函數可重寫為：
             <MathBlock math="f(x) = 3x^5 - 2x^2 + 7 + 4x^{-3}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             利用和差法則與常數倍法則，將每一項分開求導：
             <MathBlock math="f'(x) = \frac{d}{dx}(3x^5) - \frac{d}{dx}(2x^2) + \frac{d}{dx}(7) + \frac{d}{dx}(4x^{-3})" />
-          </p>
+          </div>
           <p style={{ marginBottom: '10px' }}>
             利用冪法則 <MathInline math="(x^n)' = n x^{n-1}" /> 分別計算：
           </p>
@@ -270,10 +270,10 @@ export default function Calculus_3_3() {
             <li>第三項（常數）：<MathInline math="0" /></li>
             <li>第四項：<MathInline math="4 \cdot (-3x^{-4}) = -12x^{-4}" /></li>
           </ul>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             將所有結果相加，並將負指數形式轉換回分式：
             <MathBlock math="f'(x) = 15x^4 - 4x - \frac{12}{x^4}" />
-          </p>
+          </div>
           <p>
             <strong>【結論】</strong>：
             導函數為 <MathInline math="f'(x) = 15x^4 - 4x - \frac{12}{x^4}" />。
@@ -290,15 +290,15 @@ export default function Calculus_3_3() {
           <p style={{ marginBottom: '10px' }}>
             <strong>【分析與解答】</strong>：
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             令前項為 <MathInline math="u(x) = x^2 + 3x" />，後項為 <MathInline math="v(x) = x^3 - 5x + 1" />。
             我們分別求出它們的導數：
             <MathBlock math="u'(x) = 2x + 3 \quad \text{與} \quad v'(x) = 3x^2 - 5" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             根據乘法法則 <MathInline math="f'(x) = u'(x)v(x) + u(x)v'(x)" /> 代入：
             <MathBlock math="f'(x) = (2x + 3)(x^3 - 5x + 1) + (x^2 + 3x)(3x^2 - 5)" />
-          </p>
+          </div>
           <p style={{ marginBottom: '10px' }}>
             將多項式分別展開：
           </p>
@@ -306,12 +306,12 @@ export default function Calculus_3_3() {
             <li>第一部分：<MathInline math="(2x+3)(x^3-5x+1) = 2x^4 - 10x^2 + 2x + 3x^3 - 15x + 3 = 2x^4 + 3x^3 - 10x^2 - 13x + 3" /></li>
             <li>第二部分：<MathInline math="(x^2+3x)(3x^2-5) = 3x^4 - 5x^2 + 9x^3 - 15x = 3x^4 + 9x^3 - 5x^2 - 15x" /></li>
           </ul>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             合併同類項：
             <MathBlock math="f'(x) = (2x^4 + 3x^3 - 10x^2 - 13x + 3) + (3x^4 + 9x^3 - 5x^2 - 15x)" />
             <MathBlock math="= (2+3)x^4 + (3+9)x^3 + (-10-5)x^2 + (-13-15)x + 3" />
             <MathBlock math="= 5x^4 + 12x^3 - 15x^2 - 28x + 3" />
-          </p>
+          </div>
           <p>
             <strong>【結論】</strong>：
             導函數為 <MathInline math="f'(x) = 5x^4 + 12x^3 - 15x^2 - 28x + 3" />。
@@ -328,21 +328,21 @@ export default function Calculus_3_3() {
           <p style={{ marginBottom: '10px' }}>
             <strong>【分析與解答】</strong>：
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             本題為商的形式，分子為 <MathInline math="u(x) = x^2 - 1" />，分母為 <MathInline math="v(x) = x^2 + 1" />。
             我們分別求其導數：
             <MathBlock math="u'(x) = 2x \quad \text{與} \quad v'(x) = 2x" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             根據除法法則 <MathInline math="f'(x) = \frac{u'(x)v(x) - u(x)v'(x)}{[v(x)]^2}" />：
             <MathBlock math="f'(x) = \frac{(2x)(x^2 + 1) - (x^2 - 1)(2x)}{(x^2 + 1)^2}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             在分子中提出公因式 <MathInline math="2x" /> 並化簡：
             <MathBlock math="f'(x) = \frac{2x \cdot [(x^2 + 1) - (x^2 - 1)]}{(x^2 + 1)^2}" />
             <MathBlock math="= \frac{2x \cdot [x^2 + 1 - x^2 + 1]}{(x^2 + 1)^2}" />
             <MathBlock math="= \frac{2x \cdot 2}{(x^2 + 1)^2} = \frac{4x}{(x^2 + 1)^2}" />
-          </p>
+          </div>
           <p>
             <strong>【結論】</strong>：
             導函數為 <MathInline math="f'(x) = \frac{4x}{(x^2 + 1)^2}" />。

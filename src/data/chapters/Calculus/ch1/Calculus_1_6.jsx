@@ -248,10 +248,10 @@ export default function Ch1_1_6() {
           <p style={{ color: 'var(--text-primary)', fontWeight: '600', marginBottom: '8px' }}>
             問題 1：恆等式證明
           </p>
-          <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+          <div style={{ color: 'var(--text-secondary)', lineHeight: '1.6', marginBottom: '14px' }}>
             試利用恆等式 <MathInline math="\cosh^2 x - \sinh^2 x = 1" /> 證明：
             <MathBlock math="1 - \tanh^2 x = \text{sech}^2 x" />
-          </p>
+          </div>
           <Solution>
             <div style={{ color: 'var(--text-secondary)', lineHeight: '1.7' }}>
               將已知恆等式兩邊同時除以 <MathInline math="\cosh^2 x" />：

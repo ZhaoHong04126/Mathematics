@@ -556,14 +556,14 @@ export default function Calculus_3_1() {
           <MathBlock math="= \lim_{h \to 0} \frac{1 + 2h + h^2 - 1}{h} = \lim_{h \to 0} \frac{2h + h^2}{h}" />
           <MathBlock math="= \lim_{h \to 0} (2 + h) = 2" />
           
-          <p style={{ marginTop: '16px', lineHeight: '1.8' }}>
+          <div style={{ marginTop: '16px', lineHeight: '1.8' }}>
             <strong>【切線方程式】</strong>：
             <br />
             已知切點為 <MathInline math="(1, 1)" />，且切線斜率為 <MathInline math="m = f'(1) = 2" />。
             根據直線的點斜式公式：
             <MathBlock math="y - 1 = 2(x - 1) \implies y = 2x - 1" />
             所以，曲線在該點的切線方程式為 <MathInline math="y = 2x - 1" />。
-          </p>
+          </div>
         </Solution>
       </Example>
 

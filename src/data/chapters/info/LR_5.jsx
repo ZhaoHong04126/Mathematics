@@ -135,11 +135,28 @@ export default function LR5() {
               </td>
             </tr>
             <tr>
-              <td style={{ ...tdStyle, ...dateStyle }}>未來規劃</td>
-              <td style={{ ...tdStyle, ...milestoneStyle }}>v1.0 製作微積分</td>
+              <td style={{ ...tdStyle, ...dateStyle }}>2026-07-11</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v1.0.0 支援 APP 安裝 (PWA)</td>
               <td style={tdStyle}>
-                - 繼續完成後續微積分章節<br />
-                - 逐步豐富課後練習題與幾何模擬互動元件
+                - 支援 PWA (Progressive Web App) 技術，可使用瀏覽器將網頁下載安裝為獨立 APP<br />
+                - 實作離線快取機制，提升載入速度並支援離線瀏覽
+              </td>
+            </tr>
+            <tr>
+              <td style={{ ...tdStyle, ...dateStyle }}>2026-07-11</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v1.1.0 實作路由與 HTML 嵌套修復</td>
+              <td style={tdStyle}>
+                - 實作客戶端 Hash 路由，支援「先科目、後單元」的三層網址層級（例如：`#/Calculus/Functions/1.1`）<br />
+                - 支援網址小數點段落（如 `1.1`）與內部 ID（如 `1-1-1`）雙向映射解析，並保持舊網址相容性<br />
+                - 全面修正所有講義檔案中的區塊嵌套問題，徹底消除 React 主控台的 DOM Hydration 嵌套警告
+              </td>
+            </tr>
+            <tr>
+              <td style={{ ...tdStyle, ...dateStyle }}>未來規劃</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v1.2.0</td>
+              <td style={tdStyle}>
+                - 持續編製微積分與線性代數後續章節講義內容<br />
+                - 優化互動模擬元件與內容呈現
               </td>
             </tr>
           </tbody>

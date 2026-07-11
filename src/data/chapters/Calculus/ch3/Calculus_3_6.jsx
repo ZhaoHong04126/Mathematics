@@ -135,18 +135,18 @@ export default function Calculus_3_6() {
           <p style={{ marginBottom: '10px' }}>
             <strong>【分析與解答】</strong>：
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             本題需要結合反正弦的導數公式與連鎖法則。外層函數為 <MathInline math="\arcsin(u)" />，內層函數為 <MathInline math="u = x^2" />。
             <MathBlock math="\frac{d}{dx}[\arcsin(u)] = \frac{1}{\sqrt{1 - u^2}} \cdot u'" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             代入 <MathInline math="u = x^2" /> 以及 <MathInline math="u' = 2x" />：
             <MathBlock math="f'(x) = \frac{1}{\sqrt{1 - (x^2)^2}} \cdot (2x)" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             整理得：
             <MathBlock math="f'(x) = \frac{2x}{\sqrt{1 - x^4}}" />
-          </p>
+          </div>
           <p>
             <strong>【結論】</strong>：
             導函數為 <MathInline math="f'(x) = \frac{2x}{\sqrt{1 - x^4}}" />。
@@ -163,18 +163,18 @@ export default function Calculus_3_6() {
           <p style={{ marginBottom: '10px' }}>
             <strong>【分析與解答】</strong>：
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             結合反正切的導數公式與連鎖法則。外層函數為 <MathInline math="\arctan(u)" />，內層函數為 <MathInline math="u = e^x" />。
             <MathBlock math="\frac{d}{dx}[\arctan(u)] = \frac{1}{1 + u^2} \cdot u'" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             代入 <MathInline math="u = e^x" /> 以及 <MathInline math="u' = e^x" />：
             <MathBlock math="g'(x) = \frac{1}{1 + (e^x)^2} \cdot (e^x)" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             整理得：
             <MathBlock math="g'(x) = \frac{e^x}{1 + e^{2x}}" />
-          </p>
+          </div>
           <p>
             <strong>【結論】</strong>：
             導函數為 <MathInline math="g'(x) = \frac{e^x}{1 + e^{2x}}" />。

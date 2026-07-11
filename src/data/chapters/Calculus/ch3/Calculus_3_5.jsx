@@ -101,17 +101,17 @@ export default function Calculus_3_5() {
           <p style={{ marginBottom: '10px' }}>
             將函數視為合成函數：外函數為 <MathInline math="u^5" />，內函數為 <MathInline math="u = 3x^2 + 1" />。
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             根據連鎖法則：
             <MathBlock math="f'(x) = 5(3x^2 + 1)^4 \cdot \frac{d}{dx}(3x^2 + 1)" />
-          </p>
+          </div>
           <p style={{ marginBottom: '10px' }}>
             計算內函數的導數：<MathInline math="\frac{d}{dx}(3x^2 + 1) = 6x" />
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             代入得：
             <MathBlock math="f'(x) = 5(3x^2 + 1)^4 \cdot 6x = 30x(3x^2 + 1)^4" />
-          </p>
+          </div>
           <p>
             <strong>【結論】</strong>：
             導函數為 <MathInline math="f'(x) = 30x(3x^2 + 1)^4" />。
@@ -127,10 +127,10 @@ export default function Calculus_3_5() {
           <p style={{ marginBottom: '10px' }}>
             外函數為 <MathInline math="e^u" />，內函數為 <MathInline math="u = \sin x" />。
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             根據連鎖法則：
             <MathBlock math="\frac{dy}{dx} = e^{\sin x} \cdot \frac{d}{dx}(\sin x)" />
-          </p>
+          </div>
           <p style={{ marginBottom: '10px' }}>
             計算內函數的導數：<MathInline math="\frac{d}{dx}(\sin x) = \cos x" />
           </p>
@@ -165,22 +165,22 @@ export default function Calculus_3_5() {
           已知方程式 <MathInline math="x^2 + y^2 = 25" />，求 <MathInline math="\frac{dy}{dx}" />。
         </p>
         <Solution>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             <strong>步驟 1</strong>：兩邊同時對 <MathInline math="x" /> 微分：
             <MathBlock math="\frac{d}{dx}(x^2 + y^2) = \frac{d}{dx}(25)" />
             <MathBlock math="2x + 2y \cdot \frac{dy}{dx} = 0" />
             <span style={{ color: 'var(--text-tertiary)', fontSize: '0.9rem' }}>
               （注意：對 <MathInline math="y^2" /> 微分時，使用連鎖法則得到 <MathInline math="2y \cdot y'" />）
             </span>
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             <strong>步驟 2 & 3</strong>：移項整理：
             <MathBlock math="2y \frac{dy}{dx} = -2x" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             <strong>步驟 4</strong>：解出導數：
             <MathBlock math="\frac{dy}{dx} = -\frac{2x}{2y} = -\frac{x}{y}" />
-          </p>
+          </div>
           <p>
             <strong>【結論】</strong>：
             隱函數的導數為 <MathInline math="\frac{dy}{dx} = -\frac{x}{y}" />（當 <MathInline math="y \neq 0" /> 時）。
@@ -216,23 +216,23 @@ export default function Calculus_3_5() {
           <p style={{ marginBottom: '10px' }}>
             <strong>【分析與解答】</strong>：
           </p>
-          <p style={{ marginBottom: '10px' }}>
+          <div style={{ marginBottom: '10px' }}>
             首先，我們需要找到 <MathInline math="f^{-1}(2)" /> 的值。令 <MathInline math="f(y) = 2" />：
             <MathBlock math="y^3 + y = 2" />
             透過觀察可發現當 <MathInline math="y = 1" /> 時，等式成立，因此 <MathInline math="f^{-1}(2) = 1" />。
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             接著，計算原函數的導函數：
             <MathBlock math="f'(x) = 3x^2 + 1" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             套用反函數定理：
             <MathBlock math="(f^{-1})'(2) = \frac{1}{f'(f^{-1}(2))} = \frac{1}{f'(1)}" />
-          </p>
-          <p style={{ marginBottom: '10px' }}>
+          </div>
+          <div style={{ marginBottom: '10px' }}>
             計算 <MathInline math="f'(1)" />：
             <MathBlock math="f'(1) = 3(1)^2 + 1 = 4" />
-          </p>
+          </div>
           <p>
             <strong>【結論】</strong>：
             反函數在 <MathInline math="x=2" /> 的導數為 <MathInline math="\frac{1}{4}" />。
