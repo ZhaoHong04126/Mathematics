@@ -37,7 +37,11 @@ import Calculus_Ch5_Overview from './chapters/Calculus/ch5/Calculus_Ch5_Overview
 import Calculus_5_1 from './chapters/Calculus/ch5/Calculus_5_1';
 import Calculus_5_2 from './chapters/Calculus/ch5/Calculus_5_2';
 import Calculus_5_3 from './chapters/Calculus/ch5/Calculus_5_3';
+import Calculus_5_4 from './chapters/Calculus/ch5/Calculus_5_4';
+import Calculus_5_5 from './chapters/Calculus/ch5/Calculus_5_5';
 import Calculus_Ch6_Overview from './chapters/Calculus/ch6/Calculus_Ch6_Overview';
+import Calculus_6_1 from './chapters/Calculus/ch6/Calculus_6_1';
+import Calculus_6_2 from './chapters/Calculus/ch6/Calculus_6_2';
 import LR5 from './chapters/info/LR_5';
 
 export const chaptersData = [
@@ -218,13 +222,12 @@ export const chaptersData = [
           {
             id: "1-5-4",
             title: "5.4 微積分基本定理 (FTC)",
-            content: "未有此內容"
+            component: Calculus_5_4
           },
           {
             id: "1-5-5",
             title: "5.5 不定積分",
-            content: "未有此內容",
-            // component: Calculus_5_5
+            component: Calculus_5_5
           }
         ]
       },
@@ -237,12 +240,12 @@ export const chaptersData = [
           {
             id: "1-6-1",
             title: "6.1 代換積分法",
-            content: "未有此內容"
+            component: Calculus_6_1
           },
           {
             id: "1-6-2",
             title: "6.2 分部積分法",
-            content: "未有此內容"
+            component: Calculus_6_2
           },
           {
             id: "1-6-3",

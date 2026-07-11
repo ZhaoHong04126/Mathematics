@@ -132,3 +132,25 @@ export default function MyUnit() {
   ```
 
 ---
+
+## 🔗 如何將新單元配置到目錄（側邊欄與首頁）？
+
+當您寫好一個單元檔案（例如 `Calculus_1_1.jsx`）後，請依照以下步驟將其連結至網頁：
+
+1. 打開 **`src/data/chapters.js`**。
+2. 在檔案頂部**匯入 (import)** 該單元元件：
+   ```javascript
+   import Calculus_1_1 from './chapters/Calculus/ch1/Calculus_1_1';
+   ```
+3. 在 `chaptersData` 陣列中尋找對應的學科與章節，將原先的 `content: "未有此內容"` 欄位改為 **`component: Calculus_1_1`**：
+   ```javascript
+   {
+     id: "1-1-1",
+     title: "1.1 何謂函數 ?",
+     component: Calculus_1_1  // 👈 將元件指派給此章節
+   }
+   ```
+
+這樣一來，側邊欄選單、首頁歡迎儀表板的超連結、以及麵包屑導覽就都會自動與您的 JSX 檔案完成綁定與渲染了！
+
+祝您撰寫順利！如有任何元件排版樣式上的疑問，隨時可以向我詢問。
