@@ -2,7 +2,7 @@
   "name": "UniversityMathematics",
   "homepage": "https://universitymathematics.github.io/UniversityMathematics",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -42,6 +42,9 @@ import Calculus_5_5 from './chapters/Calculus/ch5/Calculus_5_5';
 import Calculus_Ch6_Overview from './chapters/Calculus/ch6/Calculus_Ch6_Overview';
 import Calculus_6_1 from './chapters/Calculus/ch6/Calculus_6_1';
 import Calculus_6_2 from './chapters/Calculus/ch6/Calculus_6_2';
+import Calculus_6_3 from './chapters/Calculus/ch6/Calculus_6_3';
+import Calculus_6_4 from './chapters/Calculus/ch6/Calculus_6_4';
+import Calculus_6_5 from './chapters/Calculus/ch6/Calculus_6_5';
 import LR5 from './chapters/info/LR_5';
 
 export const chaptersData = [
@@ -250,17 +253,17 @@ export const chaptersData = [
           {
             id: "1-6-3",
             title: "6.3 三角積分",
-            content: "未有此內容"
+            component: Calculus_6_3
           },
           {
             id: "1-6-4",
             title: "6.4 三角代換法",
-            content: "未有此內容"
+            component: Calculus_6_4
           },
           {
             id: "1-6-5",
             title: "6.5 部分分式積分法",
-            content: "未有此內容"
+            component: Calculus_6_5
           },
           {
             id: "1-6-6",

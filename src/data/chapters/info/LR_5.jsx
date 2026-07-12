@@ -153,8 +153,16 @@ export default function LR5() {
               </td>
             </tr>
             <tr>
+              <td style={{ ...tdStyle, ...dateStyle }}>2026-07-12</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v1.2.0 製作微積分第六章中段</td>
+              <td style={tdStyle}>
+                - 完成 [ 6.3 三角積分 ]、[ 6.4 三角代換法 ]、[ 6.5 部分分式積分法 ] 的詳細講義與隨堂練習編製<br />
+                - 於 [ 6.4 三角代換法 ] 引入直角三角形幾何示意圖 (SVG)，清晰展現三角函數與變數還原的對應關係
+              </td>
+            </tr>
+            <tr>
               <td style={{ ...tdStyle, ...dateStyle }}>未來規劃</td>
-              <td style={{ ...tdStyle, ...milestoneStyle }}>v1.2.0</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v1.3.0</td>
               <td style={tdStyle}>
                 - 持續編製微積分與線性代數後續章節講義內容<br />
                 - 優化互動模擬元件與內容呈現
