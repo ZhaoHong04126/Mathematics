@@ -27,3 +27,10 @@ npm install
 npm run build
 ```
 編譯完成後的靜態檔案將輸出於 `dist/` 資料夾中。
+
+## 瀏覽器
+查看撰寫出來的內容與功能
+```
+http://localhost:5173/UniversityMathematics/
+
+```
