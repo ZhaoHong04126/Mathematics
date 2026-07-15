@@ -1,13 +1,25 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 // 行內數學公式
 export function MathInline({ math }) {
-  return <span className="math-inline">{`\\(${math}\\)`}</span>;
+  const ref = useRef(null);
+  useEffect(() => {
+    if (window.MathJax && window.MathJax.typesetPromise && ref.current) {
+      window.MathJax.typesetPromise([ref.current]).catch((err) => console.error(err));
+    }
+  }, [math]);
+  return <span ref={ref} className="math-inline">{`\\(${math}\\)`}</span>;
 }
 
 // 區塊數學公式
 export function MathBlock({ math }) {
-  return <div className="math-block">{`\\[${math}\\]`}</div>;
+  const ref = useRef(null);
+  useEffect(() => {
+    if (window.MathJax && window.MathJax.typesetPromise && ref.current) {
+      window.MathJax.typesetPromise([ref.current]).catch((err) => console.error(err));
+    }
+  }, [math]);
+  return <div ref={ref} className="math-block">{`\\[${math}\\]`}</div>;
 }
 
 // 定義區塊

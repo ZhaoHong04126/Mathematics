@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { chaptersData } from '../data/chapters';
+import { MathInline, MathBlock } from './MathBlocks';
 
 export default function MainContent({ activeTopicId, setActiveTopicId }) {
   // Trigger MathJax typesetting when the active topic changes
@@ -47,9 +48,7 @@ export default function MainContent({ activeTopicId, setActiveTopicId }) {
     return parts.map((part, index) => {
       if (index % 2 === 1) {
         return (
-          <span key={index} className="math-inline">
-            {`\\(${part}\\)`}
-          </span>
+          <MathInline key={index} math={part} />
         );
       }
       return part;
@@ -104,9 +103,7 @@ export default function MainContent({ activeTopicId, setActiveTopicId }) {
           if (line.trim().startsWith('$$') && line.trim().endsWith('$$')) {
             const eq = line.trim().slice(2, -2);
             return (
-              <div key={idx} className="math-block">
-                {`\\[${eq}\\]`}
-              </div>
+              <MathBlock key={idx} math={eq} />
             );
           }
           // Normal paragraphs

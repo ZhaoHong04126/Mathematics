@@ -161,8 +161,15 @@ export default function LR5() {
               </td>
             </tr>
             <tr>
+              <td style={{ ...tdStyle, ...dateStyle }}>2026-07-15</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v1.2.1</td>
+              <td style={tdStyle}>
+                - 重構數學公式顯示元件以改善可讀性與功能性
+              </td>
+            </tr>
+            <tr>
               <td style={{ ...tdStyle, ...dateStyle }}>未來規劃</td>
-              <td style={{ ...tdStyle, ...milestoneStyle }}>v1.3.0</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}></td>
               <td style={tdStyle}>
                 - 持續編製微積分與線性代數後續章節講義內容<br />
                 - 優化互動模擬元件與內容呈現

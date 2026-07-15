@@ -45,6 +45,7 @@ import Calculus_6_2 from './chapters/Calculus/ch6/Calculus_6_2';
 import Calculus_6_3 from './chapters/Calculus/ch6/Calculus_6_3';
 import Calculus_6_4 from './chapters/Calculus/ch6/Calculus_6_4';
 import Calculus_6_5 from './chapters/Calculus/ch6/Calculus_6_5';
+import Calculus_6_6 from './chapters/Calculus/ch6/Calculus_6_6';
 import LR5 from './chapters/info/LR_5';
 
 export const chaptersData = [
@@ -268,7 +269,7 @@ export const chaptersData = [
           {
             id: "1-6-6",
             title: "6.6 瑕積分",
-            content: "未有此內容"
+            component: Calculus_6_6
           }
         ]
       },
