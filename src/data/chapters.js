@@ -46,7 +46,7 @@ import Calculus_6_3 from './chapters/Calculus/ch6/Calculus_6_3';
 import Calculus_6_4 from './chapters/Calculus/ch6/Calculus_6_4';
 import Calculus_6_5 from './chapters/Calculus/ch6/Calculus_6_5';
 import Calculus_6_6 from './chapters/Calculus/ch6/Calculus_6_6';
-import LR5 from './chapters/info/LR_5';
+import Calculus_Ch7_Overview from './chapters/Calculus/ch7/Calculus_Ch7_Overview';
 
 export const chaptersData = [
   // 1. 微積分
@@ -277,8 +277,7 @@ export const chaptersData = [
       {
         id: "IntegralApplications",
         title: "第七章：積分的應用",
-        // component: Calculus_Ch7_Overview,
-        content: "未有此內容",
+        component: Calculus_Ch7_Overview,
         subtopics: []
       },
       // 第八章：極座標與參數式
@@ -329,26 +328,12 @@ export const chaptersData = [
     content: "",
     topics: []
   },
+
   // 6. 資訊與資源
   {
     id: "Info",
     title: "資訊與資源",
-    topics: [
-      {
-        id: "OnlineResources",
-        title: "線上學習資源",
-        content: "未有此內容"
-      },
-      {
-        id: "RecommendedBooks",
-        title: "教材與書籍推薦",
-        content: "未有此內容"
-      },
-      {
-        id: "DevelopmentLog",
-        title: "本網頁撰寫路程與記錄",
-        component: LR5
-      }
-    ]
+    content: "",
+    topics: []
   }
 ];
