@@ -168,6 +168,14 @@ export default function LR5() {
               </td>
             </tr>
             <tr>
+              <td style={{ ...tdStyle, ...dateStyle }}>2026-07-19</td>
+              <td style={{ ...tdStyle, ...milestoneStyle }}>v1.3.0</td>
+              <td style={tdStyle}>
+                - 重構 chapters.js 和 Calculus_6_6.jsx，改善代碼可讀性<br />
+                - 新增積分應用章節 跟 極座標與參數式章節
+              </td>
+            </tr>
+            <tr>
               <td style={{ ...tdStyle, ...dateStyle }}>未來規劃</td>
               <td style={{ ...tdStyle, ...milestoneStyle }}></td>
               <td style={tdStyle}>
