@@ -180,25 +180,25 @@ export const chaptersData = [
         title: "第四章：微分的應用",
         component: Calculus_Ch4_Overview,
         subtopics: [
-          { 
-            id: "1-4-1", 
-            title: "4.1 導函數與函數性質", 
-            component: Calculus_4_1 
+          {
+            id: "1-4-1",
+            title: "4.1 導函數與函數性質",
+            component: Calculus_4_1
           },
-          { 
-            id: "1-4-2", 
-            title: "4.2 極值問題", 
-            component: Calculus_4_2 
+          {
+            id: "1-4-2",
+            title: "4.2 極值問題",
+            component: Calculus_4_2
           },
-          { 
-            id: "1-4-3", 
-            title: "4.3 均值定理", 
-            component: Calculus_4_3 
+          {
+            id: "1-4-3",
+            title: "4.3 均值定理",
+            component: Calculus_4_3
           },
-          { 
-            id: "1-4-4", 
-            title: "4.4 洛必達法則", 
-            component: Calculus_4_4 
+          {
+            id: "1-4-4",
+            title: "4.4 洛必達法則",
+            component: Calculus_4_4
           }
         ]
       },
@@ -273,12 +273,27 @@ export const chaptersData = [
           }
         ]
       },
-      // 第七章：無窮數列與級數
+      // 第七章：積分的應用
+      {
+        id: "IntegralApplications",
+        title: "第七章：積分的應用",
+        // component: Calculus_Ch7_Overview,
+        content: "未有此內容",
+        subtopics: []
+      },
+      // 第八章：極座標與參數式
+      {
+        id: "PolarCoordinates",
+        title: "第八章：極座標與參數式",
+        content: "未有此內容",
+        // component: Calculus_Ch8_Overview
+      },
+      // 第九章：無窮數列與級數
       {
         id: "InfiniteSeries",
-        title: "第七章：無窮數列與級數",
+        title: "第九章：無窮數列與級數",
         content: "未有此內容",
-        // component: [] // Calculus_7_1
+        // component: Calculus_Ch9_Overview
       }
     ]
   },

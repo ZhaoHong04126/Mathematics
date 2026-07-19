@@ -1,14 +1,4 @@
-import { 
-  Definition, 
-  Theorem, 
-  Example, 
-  Solution, 
-  Proof,
-  MathInline, 
-  MathBlock, 
-  Exercises, 
-  ExerciseItem 
-} from '../../../../components/MathBlocks';
+import { Definition, Theorem, Example, Solution, Proof, MathInline, MathBlock, Exercises, ExerciseItem } from '../../../../components/MathBlocks';
 
 export default function Calculus_6_6() {
   return (
@@ -68,48 +58,13 @@ export default function Calculus_6_6() {
         <div style={{ color: 'var(--text-secondary)', lineHeight: '1.7' }}>
           考慮瑕積分 <MathInline math="\int_{1}^{\infty} \frac{1}{x^p} \, dx" />，其中 <MathInline math="p" /> 為常數：
           <ul style={{ margin: '8px 0 0 20px', paddingLeft: '0' }}>
-            <li>當 <MathInline math="p > 1" /> 時，該瑕積分<strong>收斂</strong>，其值為 <MathInline math="\frac{1}{p-1}" />。</li>
+            <li>當 <MathInline math="p > 1" /> 時，該瑕積分<strong>收斂</strong>。</li>
             <li>當 <MathInline math="p \le 1" /> 時，該瑕積分<strong>發散</strong>。</li>
           </ul>
         </div>
       </Theorem>
 
-      <Proof title={<>p-級數型無窮積分性質之證明</>}>
-        <div style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}>
-          <p>
-            我們根據定義，計算其極限值：
-          </p>
-          <div style={{ margin: '12px 0' }}>
-            <strong>情況 1：當 <MathInline math="p = 1" /> 時</strong>
-            <MathBlock math="
-              \int_{1}^{\infty} \frac{1}{x} \, dx 
-              = \lim_{t \to \infty} \int_{1}^{t} \frac{1}{x} \, dx 
-              = \lim_{t \to \infty} \Big[ \ln|x| \Big]_1^t 
-              = \lim_{t \to \infty} \ln t = \infty
-            " />
-            因此當 <MathInline math="p=1" /> 時發散。
-          </div>
-          <div style={{ margin: '12px 0' }}>
-            <strong>情況 2：當 <MathInline math="p \neq 1" /> 時</strong>
-            <MathBlock math="
-              \int_{1}^{\infty} \frac{1}{x^p} \, dx 
-              = \lim_{t \to \infty} \int_{1}^{t} x^{-p} \, dx 
-              = \lim_{t \to \infty} \left[ \frac{x^{1-p}}{1-p} \right]_1^t
-              = \lim_{t \to \infty} \left( \frac{t^{1-p}}{1-p} - \frac{1}{1-p} \right)
-            " />
-            此時，極限的行為完全取決於 <MathInline math="t^{1-p}" /> 的指數 <MathInline math="1-p" />：
-            <ul>
-              <li>若 <MathInline math="p > 1" />，則 <MathInline math="1-p < 0" />，所以當 <MathInline math="t \to \infty" /> 時，<MathInline math="t^{1-p} \to 0" />。
-                <br />
-                此時極限為 <MathInline math="0 - \frac{1}{1-p} = \frac{1}{p-1}" />（收斂）。
-              </li>
-              <li>若 <MathInline math="p < 1" />，則 <MathInline math="1-p > 0" />，所以當 <MathInline math="t \to \infty" /> 時，<MathInline math="t^{1-p} \to \infty" />（發散）。
-              </li>
-            </ul>
-          </div>
-          <p>得證。</p>
-        </div>
-      </Proof>
+
 
       {/* 二、第二類瑕積分：無窮不連續點 */}
       <h3 style={{ margin: '40px 0 16px 0', color: 'var(--text-primary)', fontSize: '1.35rem', fontWeight: '600', borderBottom: '1px solid var(--border-color)', paddingBottom: '8px' }}>
@@ -353,7 +308,7 @@ export default function Calculus_6_6() {
             </div>
             <div style={{ margin: '14px 0' }}>
               我們已知基準積分（<MathInline math="p=1" /> 時）：
-              <MathBlock math="\int_{1}^{\infty} \frac{1}{x} \, dx" /> 
+              <MathBlock math="\int_{1}^{\infty} \frac{1}{x} \, dx" />
               是<strong>發散</strong>的。
               根據直接比較審斂法的「小發則大發」原則，由於較小的函數的積分發散，較大函數的積分也必定發散。
               <br />
