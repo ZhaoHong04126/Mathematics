@@ -4,7 +4,7 @@ import babel from '@rolldown/plugin-babel'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/UniversityMathematics/',
+  base: '/Mathematics/',
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
