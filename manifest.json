@@ -1,8 +1,9 @@
 {
-  "name": "大學數學資源網",
+  "name": "大學數學電子講義",
   "short_name": "大學數學",
-  "description": "大學數學學科單元目錄與資源整理",
-  "start_url": "/UniversityMathematics/",
+  "description": "大學數學學科單元目錄與講義筆記",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#8B5CF6",
