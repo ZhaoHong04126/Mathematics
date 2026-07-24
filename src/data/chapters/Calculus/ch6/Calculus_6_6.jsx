@@ -1,4 +1,4 @@
-import { Definition, Theorem, Example, Solution, Proof, MathInline, MathBlock, Exercises, ExerciseItem } from '../../../../components/MathBlocks';
+import { Definition, Theorem, Example, Solution, MathInline, MathBlock, Exercises, ExerciseItem } from '../../../../components/MathBlocks';
 
 export default function Calculus_6_6() {
   return (
